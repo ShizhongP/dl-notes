@@ -1,9 +1,45 @@
-<mxfile host="app.diagrams.net" modified="2024-03-24T03:07:25.879Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" version="22.1.21" etag="UsqUl_JJ99YQktOX3Y1j" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-24T03:14:45.500Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="gnUV5Mfb_RivT2UvHs3Q" version="22.1.21" type="github">
   <diagram name="第 1 页" id="ihWGKwlDa6VRTUdzQJky">
-    <mxGraphModel>
+    <mxGraphModel dx="983" dy="1490" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="0dc50Q2low9ilCVPcxdN-1" value="embeding" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-101" y="71" width="139" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="0dc50Q2low9ilCVPcxdN-2" value="encoder" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-101" y="12" width="139" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="0dc50Q2low9ilCVPcxdN-3" value="emo_encoder" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-182" y="-74" width="139" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="0dc50Q2low9ilCVPcxdN-4" value="cog_encoder" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-4" y="-79" width="139" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="0dc50Q2low9ilCVPcxdN-5" value="emo_ref_encoder" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-182" y="-147" width="139" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="0dc50Q2low9ilCVPcxdN-6" value="cog_ref_encoder" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-4" y="-147" width="139" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="0dc50Q2low9ilCVPcxdN-7" value="decoder" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-92" y="-222" width="139" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="0dc50Q2low9ilCVPcxdN-8" value="emo_linear" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-267" y="-270" width="139" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="0dc50Q2low9ilCVPcxdN-9" value="generator" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-89" y="-293" width="139" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="0dc50Q2low9ilCVPcxdN-10" value="activation(softMax)" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-105.5" y="-364" width="166" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="0dc50Q2low9ilCVPcxdN-11" value="criterion(计算loss)" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-293" y="-431" width="147" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="0dc50Q2low9ilCVPcxdN-12" value="optimizer(NoamOpt)" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-293" y="-380" width="156" height="35" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
