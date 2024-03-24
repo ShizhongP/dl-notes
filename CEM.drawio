@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2024-03-24T03:14:45.500Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="gnUV5Mfb_RivT2UvHs3Q" version="22.1.21" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-24T06:30:40.801Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="dTX1N0iIlWDpNGtwrZY3" version="22.1.21" type="github">
   <diagram name="第 1 页" id="ihWGKwlDa6VRTUdzQJky">
-    <mxGraphModel dx="983" dy="1490" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1049" dy="1568" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="0dc50Q2low9ilCVPcxdN-1" value="embeding" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="-101" y="71" width="139" height="35" as="geometry" />
+          <mxGeometry x="-166" y="167" width="139" height="35" as="geometry" />
         </mxCell>
         <mxCell id="0dc50Q2low9ilCVPcxdN-2" value="encoder" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="-101" y="12" width="139" height="35" as="geometry" />
@@ -39,6 +39,18 @@
         </mxCell>
         <mxCell id="0dc50Q2low9ilCVPcxdN-12" value="optimizer(NoamOpt)" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="-293" y="-380" width="156" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="0dc50Q2low9ilCVPcxdN-13" value="criterion_ppl" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-293" y="-485" width="145" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="0dc50Q2low9ilCVPcxdN-15" value="lut&amp;nbsp;&amp;nbsp;&lt;br&gt;nn.Embedding&lt;br&gt;(vocab, d_model)" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="100" y="150" width="216" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="0dc50Q2low9ilCVPcxdN-16" value="(batch_size, *(sample_shape)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-231" y="222" width="255" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0dc50Q2low9ilCVPcxdN-17" value="batch_size, *(sample_shape), d_model)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-248" y="117" width="315" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
