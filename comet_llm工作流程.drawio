@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-26T12:06:19.045Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="8GpUaLhrx9JA2cVdYe2F" version="24.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-26T12:08:54.403Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="NuRBH9R4wk6RCRkHwk6G" version="24.3.0" type="github">
   <diagram name="第 1 页" id="jxOvMMUj18_BXOIknRvy">
     <mxGraphModel dx="760" dy="387" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -145,8 +145,8 @@
             <mxPoint x="414" y="661" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="uvMLNVjx0ji6o3SPqt7C-68" value="Which part is import ?" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="262" y="708" width="137.5" height="40" as="geometry" />
+        <mxCell id="uvMLNVjx0ji6o3SPqt7C-68" value="Which part is important ?" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="240" y="708" width="159.5" height="40" as="geometry" />
         </mxCell>
         <mxCell id="uvMLNVjx0ji6o3SPqt7C-70" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
