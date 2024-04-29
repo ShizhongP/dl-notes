@@ -40,13 +40,15 @@
 - [Transformer模型详解](https://zhuanlan.zhihu.com/p/338817680)
 - [如何理解transformer各个层的意义](https://blog.csdn.net/rongsenmeng2835/article/details/110511294)
 
-**补充资料**
+**attnetion 机制的理解和实现**
 
 - [Attention注意力机制与self-attention自注意力机制](https://zhuanlan.zhihu.com/p/265108616)
 
 - [注意力机制综述](https://zhuanlan.zhihu.com/p/631398525)
 
 - [张俊林讲解attention](https://zhuanlan.zhihu.com/p/37601161) 这个文章有点老，但是讲的深入浅出，强烈推荐
+
+- [pytorch 实现多头注意力](https://blog.csdn.net/weixin_53598445/article/details/125009686)
 
 **Question**
 
