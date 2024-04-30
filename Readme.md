@@ -48,6 +48,8 @@
 
 - [张俊林讲解attention](https://zhuanlan.zhihu.com/p/37601161) 这个文章有点老，但是讲的深入浅出，强烈推荐
 
+- [numpy 和 pytorch 实现点积注意力](https://blog.51cto.com/u_14300986/5467376)
+
 - [pytorch 实现多头注意力](https://blog.csdn.net/weixin_53598445/article/details/125009686)
 
 **Question**
@@ -60,9 +62,7 @@
 
 - 机器翻译实例：在transformer架构中，给定一个句子"I have a cat"。阐述transformer是如何将其翻译为"我有一只猫"
 
-
-
-
+[源码实现](https://github.com/zxuu/Self-Attention/blob/main/OneHead/self-attention.py)
 
 ## 加速训练，降低训练时显存的框架和技术
 
