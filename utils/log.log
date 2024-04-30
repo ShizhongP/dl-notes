@@ -54,7 +54,6 @@ timestamp, name, index, utilization.gpu [%], memory.total [MiB], memory.used [Mi
 2024/04/30 11:10:16.652, NVIDIA GeForce RTX 3050 Ti Laptop GPU, 0, 0 %, 4096 MiB, 4 MiB, 11.13 W
 2024/04/30 11:10:17.653, NVIDIA GeForce RTX 3050 Ti Laptop GPU, 0, 0 %, 4096 MiB, 4 MiB, 11.14 W
 2024/04/30 11:10:18.654, NVIDIA GeForce RTX 3050 Ti Laptop GPU, 0, 0 %, 4096 MiB, 4 MiB, 11.15 W
-timestamp, name, index, utilization.gpu [%], memory.total [MiB], memory.used [MiB], power.draw [W]
 2024/04/30 11:10:30.108, NVIDIA GeForce RTX 3050 Ti Laptop GPU, 0, 0 %, 4096 MiB, 4 MiB, 11.09 W
 2024/04/30 11:10:31.108, NVIDIA GeForce RTX 3050 Ti Laptop GPU, 0, 0 %, 4096 MiB, 4 MiB, 11.05 W
 2024/04/30 11:10:32.109, NVIDIA GeForce RTX 3050 Ti Laptop GPU, 0, 0 %, 4096 MiB, 4 MiB, 11.14 W
