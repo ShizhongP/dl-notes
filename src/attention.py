@@ -6,6 +6,9 @@ from math import sqrt
     input_shape : batch_size, sequence_length, embedding_size
     
     output batch_size, sequence_length, dim_v
+    
+    introduction:
+        torch.bmm  批量矩阵乘法
 '''
 
 class SelfAttention(nn.Module):
@@ -21,7 +24,7 @@ class SelfAttention(nn.Module):
         
         self.linear_v=nn.Linear(dim_embedding,dim_v,bias=False)
         
-        self.normal_factor = 1/sqrt(dim_embedding)
+        self.normal_factor = 1/sqrt(dim_qk)
         
     def forward(self,x):
         batch_size,sequence_length,dim_embedding = x.shape
