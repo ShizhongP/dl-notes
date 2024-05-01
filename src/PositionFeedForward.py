@@ -9,7 +9,10 @@ class PositionFeedForward(nn.Module):
         self.linear_1 = nn.Linear(dim_model,dim_ff)
         self.relu= nn.ReLU()
         self.linear_2 = nn.Linear(dim_ff,dim_model)
-        self.dropout = nn.Dropout(dropout)
+        
+        self.dropout = None
+        if dropout is not None:
+            self.dropout = nn.Dropout(dropout)
         
         
     def forward(self,x):
@@ -17,7 +20,8 @@ class PositionFeedForward(nn.Module):
         
         output = self.linear_1(x) # batch_size,sequence_length,dim_ff
         output = self.relu(output) 
-        output = self.dropout(output)
+        if self.dropout is not None:
+            output = self.dropout(output)
         output = self.linear_2(output) # batch_size,sequence_length,dim_ff
         
         # simplify the process

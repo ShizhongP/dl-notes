@@ -30,4 +30,5 @@ def test():
     print(x)
     print(x_norm)
     
-test()
+if __name__ =="__main__":
+    test()
