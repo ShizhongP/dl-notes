@@ -34,24 +34,26 @@ class MultiheadAttention(nn.Module):
         q =self.linear_q(x).reshape(batch_size,sequence_length,self.num_heads,div_k).transpose(1,2)
         # batch_size , num_heads , sequence_length , div_v
         v =self.linear_v(x).reshape(batch_size,sequence_length,self.num_heads,div_v).transpose(1,2)
-         
+        
         dist = torch.matmul(q,k.transpose(-2,-1)) * self._normal_factor
+        weight = dist.detach()
         dist = torch.softmax(dist,dim=-1)
         
         atten_score = torch.matmul(dist,v) # batch_size, num_heads, sequence_length, div
         atten_score = atten_score.transpose(1,2) # batch_size, sequence_length , num_heads, div
         atten_score = atten_score.reshape(batch_size,sequence_length,self.num_heads*div_v) 
         
-        return atten_score 
+        return atten_score, weight
 
 
 class MultiHeadAttention(nn.Module):
     
-    def __init__(self,dim_embedding, dim_qk, dim_v , num_heads=8,dropout=None):
+    def __init__(self,dim_embedding, dim_qk, dim_v, dim_output=None, num_heads=8,dropout=None):
         super(MultiHeadAttention, self).__init__()
         self.dim_embedding = dim_embedding
         self.dim_qk = dim_qk
         self.dim_v = dim_v
+        self.dim_o =dim_output
         self.num_heads = num_heads
         self.dropout = dropout
         
@@ -61,7 +63,8 @@ class MultiHeadAttention(nn.Module):
         self.linear_q = nn.Linear(dim_embedding,dim_qk, bias=False) 
         self.linear_k = nn.Linear(dim_embedding,dim_qk,bias=False)
         self.linear_v = nn.Linear(dim_embedding,dim_v,bias=False)
-        
+        if dim_output is not None:
+            self.linear_o = nn.Linear(dim_v, dim_output, bias=False)
         if  dropout is not None:
             self.dropout = nn.Dropout(dropout)
             
@@ -79,9 +82,9 @@ class MultiHeadAttention(nn.Module):
         k = self.linear_k(x).view(batch_size,sequence_length,self.num_heads,div_k).permute(0,2,1,3)
         v = self.linear_v(x).view(batch_size,sequence_length,self.num_heads,div_v).permute(0,2,1,3)
         
-        
         # Combine queries and keys
-        logits = torch.matmul(q, k.permute(0, 1, 3, 2)) * self._normal_factor
+        # batch_size, num_heads, sequence_length, sequence_length
+        logits = torch.matmul(q, k.permute(0, 1, 3, 2)) * self._normal_factor 
 
         if mask is not None:
             mask = mask.unsqueeze(1)  # [B, 1, 1, T_values]
@@ -99,9 +102,13 @@ class MultiHeadAttention(nn.Module):
 
         atten_score = torch.matmul(weights, v)
         
+        # concat multiheads and reshape to (batch_size, sequence_length, dim_v)
         atten_score = atten_score.permute(0,2,1,3).contiguous().view(batch_size,sequence_length,self.num_heads*div_v)
-
-        return atten_score, attetion_weights
+        
+        # Output Linear
+        if self.dim_o is not None:
+            atten_score = self.linear_o(atten_score) # batch_size, sequence_length, dim_o
+        return atten_score, logits
 
 
 def test():
@@ -115,14 +122,11 @@ def test():
     x = torch.randn(batch_size,sequence_length,dim_embedding)
     
     multiattention=MultiHeadAttention(dim_embedding,dim_qk,dim_v, num_heads=8)
-    att = multiattention(x)
-    print(att[0].shape)
+    att, dist = multiattention(x)
     
     multiattention2=MultiheadAttention(dim_embedding,dim_qk,dim_v, num_heads=8)
-    att2 = multiattention2(x)
+    att2 , dist2 = multiattention2(x)
     
-    print(att2.shape)
     from pprint import pprint
-    pprint(att[0])
-    pprint(att2)
-test()
+    pprint(dist)
+    pprint(dist)
