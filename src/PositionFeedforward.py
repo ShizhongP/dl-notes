@@ -8,7 +8,7 @@ class PositionFeedForward(nn.Module):
         
         self.linear_1 = nn.Linear(dim_model,dim_ff)
         self.relu= nn.ReLU()
-        self.linear_2 = nn.Linear(dim_model,dim_ff)
+        self.linear_2 = nn.Linear(dim_ff,dim_model)
         self.dropout = nn.Dropout(dropout)
         
         
