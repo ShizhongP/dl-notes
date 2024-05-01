@@ -7,6 +7,7 @@ def draw(data, title):
     plt.plot(data)
     plt.title(title)
     plt.show()
+    plt.savefig('./picture.png')
     
     
 def main():
