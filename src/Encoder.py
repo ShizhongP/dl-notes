@@ -4,7 +4,7 @@ import torch.nn as nn
 from EncoderLayer import EncoderLayer
 
 class Encoder(nn.Module):
-    def __init__(self, num_layers, dim_embedding, num_heads, dim_ff=None, dropout=0.1):
+    def __init__(self, dim_embedding, num_layers, num_heads, dim_ff=None, dropout=0.1):
         super(Encoder,self).__init__()
         
         self.layers = nn.ModuleList([EncoderLayer(dim_embedding, num_heads, dim_ff, dropout) for _ in range(num_layers)])
@@ -25,7 +25,7 @@ def test():
     
     x = torch.rand(batch_size, sequence_length, dim_embedding)
     
-    encoder = Encoder(num_layers=6, dim_embedding=dim_embedding, num_heads=8, dim_ff=dim_ff, dropout=0.1)
+    encoder = Encoder(dim_embedding=dim_embedding, num_layers=6, num_heads=8, dim_ff=dim_ff, dropout=0.1)
 
     output = encoder(x)
     print(output.shape)

@@ -47,7 +47,7 @@ def test():
     
     x = torch.rand(batch_size,sequence_length,dim_embedding)
     decoder_layer = DecoderLayer(dim_embedding,dim_ff,num_heads=num_heads,dropout=0.1)
-    encoder = Encoder(num_layers=6,dim_embedding=dim_embedding,num_heads=num_heads,dim_ff=dim_ff,dropout=0.1)
+    encoder = Encoder(dim_embedding=dim_embedding,num_layers=6,num_heads=num_heads,dim_ff=dim_ff,dropout=0.1)
     
     encode_output = encoder(x)
     output = decoder_layer(x, encode_output)
