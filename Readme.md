@@ -13,23 +13,21 @@
 **基本的学习资料:**
 
 - [PyTorch深度学习快速入门教程](https://www.bilibili.com/video/BV1hE411t7RN/?spm_id_from=333.337.search-card.all.click&vd_source=ec674d7bf8a6cdd072b8017efe791d9f) b站小土堆
-- [跟李沐学AI](https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497) b 站李沐
+- [跟李沐学AI](https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497) b站李沐
 
 - [《动手学深度学习》 — 动手学深度学习 2.0.0 documentation (d2l.ai)](https://zh.d2l.ai/)
 
 ## 后续学习
-
+- [nlp beginner](https://github.com/FudanNLP/nlp-beginner) 复旦nlp入门指南，经典
 ### 矩阵乘法
 
-- [mm ref ](https://bhosmer.github.io/mm/ref.html)
+- [mm ref ](https://bhosmer.github.io/mm/ref.html) 一个矩阵乘法可视化的网站
 
 ###  ResNet残差神经网络学习
 
 - [详解残差网络 ](https://zhuanlan.zhihu.com/p/42706477)
 
 ###  SGD和Adam优化器
-
-
 
 
 ###   Transformer结构
@@ -39,7 +37,7 @@
 - [The Illustrated Transformer – Jay Alammar ](https://jalammar.github.io/illustrated-transformer/)
 - [Transformer模型详解](https://zhuanlan.zhihu.com/p/338817680)
 - [如何理解transformer各个层的意义](https://blog.csdn.net/rongsenmeng2835/article/details/110511294)
-
+- [Transformer为什么使用LayerNorm 而不使用 BatchNomr](https://zhuanlan.zhihu.com/p/492803886)
 **attnetion 机制的理解和实现**
 
 - [Attention注意力机制与self-attention自注意力机制](https://zhuanlan.zhihu.com/p/265108616)
@@ -166,4 +164,4 @@
 
 - 如何写出优雅的工程代码?
 
-多看 github 上的优质工程代码，学习以下，什么文件改放什么地方，学习如何组织一个大项目的开发，一个文件内的代码如何组织，函数要放在什么位置，代码结构又要怎么组织才算优雅?
+多看 github 上的优质工程代码，学习一下，什么文件改放什么地方，学习如何组织一个大项目的开发，一个文件内的代码如何组织，函数要放在什么位置，代码结构又要怎么组织才算优雅?

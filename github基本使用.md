@@ -20,13 +20,15 @@ git push origin main/master
 
 
 
-设置令牌
-
-git remote set-url origin https://<your_token>@github.com/<user_name>/仓库名.git 
-
+设置远程仓库
+git remote set-url origin you_repository_url 
 
 
-目前我的token
 
-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
+更新
+git add . 
+git commit -m "更新内容简单描述“
+
+git push 
+要求你输入github用户名和你设置的令牌
 
