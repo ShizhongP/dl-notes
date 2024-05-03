@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-05-03T02:51:37.117Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="lWCQ2QiVAYq1OSqVob5j" version="24.3.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-03T03:01:33.479Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="QJh3FlTpV-KL5PsNFbbr" version="24.3.1" type="github">
   <diagram name="第 1 页" id="-fBQ2Zc3S_zsf6xObRtY">
     <mxGraphModel dx="1207" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1306,8 +1306,8 @@
             <mxPoint x="460" y="740" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BH2l4RqOd2dtc3u16TBg-650" value="&lt;ol&gt;&lt;li&gt;Value 1&lt;/li&gt;&lt;li&gt;Value 2&lt;/li&gt;&lt;li&gt;Value 3&lt;/li&gt;&lt;/ol&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" vertex="1" parent="1">
-          <mxGeometry x="540" y="250" width="190" height="80" as="geometry" />
+        <mxCell id="BH2l4RqOd2dtc3u16TBg-650" value="&lt;ol&gt;&lt;li&gt;模型初始化&lt;/li&gt;&lt;li&gt;模型广播&lt;/li&gt;&lt;li&gt;本地模型训练&lt;/li&gt;&lt;li&gt;模型聚合&lt;/li&gt;&lt;li&gt;更新全局模型&lt;/li&gt;&lt;/ol&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="540" y="250" width="200" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
