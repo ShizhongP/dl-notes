@@ -146,13 +146,23 @@
 
 
 
+## 大模型相关书籍和仓库推荐
+
+[LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch/tree/main) 从零开始搭建你的大模型
+
+
+
 ## 学习完之后应该具备的能力
 
 - 使用pytorch 搭建任意的神经网络，只要给出原理图，都应该能实现
 - 搭建一个完整训练和预测的pipeline
 - 能使用各种加速训练和推理的框架，配置环境
 
+## 关于环境配置和基本功
 
+基本上都使用python来做 deep learning了， 现在目前我比较常用的环境管理就是conda
+
+最好给自己的电脑配一个linux的系统,Ubuntu,ArchLinux都行
 
 ## 杂谈
 
