@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-05-14T06:37:35.161Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="Mi_NCyIJsyPE2ZbcvlzT" version="24.4.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-14T06:40:05.902Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="i7hTBtn1mIakfriBTQAE" version="24.4.0" type="github">
   <diagram name="第 1 页" id="aVO2Qc_tfBkiSDM-4gPl">
     <mxGraphModel dx="1469" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -108,6 +108,24 @@
         </mxCell>
         <mxCell id="H8tJKzjwVSUlQSuMOM1C-34" value="读取数据" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="530" y="825" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="H8tJKzjwVSUlQSuMOM1C-35" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="232.5" y="862.5" width="20" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="H8tJKzjwVSUlQSuMOM1C-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="H8tJKzjwVSUlQSuMOM1C-36" target="H8tJKzjwVSUlQSuMOM1C-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H8tJKzjwVSUlQSuMOM1C-36" value="数据集查看" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="184" y="960" width="20" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="H8tJKzjwVSUlQSuMOM1C-38" value="聚类结果查看" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="219" y="960" width="20" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="H8tJKzjwVSUlQSuMOM1C-40" value="聚类结果分析" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="254" y="960" width="20" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="H8tJKzjwVSUlQSuMOM1C-42" value="聚类算法比较" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="284" y="960" width="20" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
