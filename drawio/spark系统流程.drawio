@@ -1,9 +1,36 @@
-<mxfile host="app.diagrams.net" modified="2024-05-14T06:20:04.326Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" version="24.4.0" etag="E2nPCTAQf9ipHFjmLgoJ" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-14T06:25:10.368Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="sUc1rTZlfHguB44q9qsE" version="24.4.0" type="github">
   <diagram name="第 1 页" id="aVO2Qc_tfBkiSDM-4gPl">
-    <mxGraphModel>
+    <mxGraphModel dx="1028" dy="522" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="H8tJKzjwVSUlQSuMOM1C-1" value="数据预处理" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="615" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="H8tJKzjwVSUlQSuMOM1C-3" value="数据拼接和组装" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="550" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="H8tJKzjwVSUlQSuMOM1C-4" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="270" y="550" width="20" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="H8tJKzjwVSUlQSuMOM1C-5" value="数据离散化" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="597" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="H8tJKzjwVSUlQSuMOM1C-6" value="数据数值化和归一化" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="644" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="H8tJKzjwVSUlQSuMOM1C-7" value="数据降维" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="687" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="H8tJKzjwVSUlQSuMOM1C-8" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="414" y="634.5" as="sourcePoint" />
+            <mxPoint x="494" y="634.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H8tJKzjwVSUlQSuMOM1C-9" value="聚类算法" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="615" width="90" height="45" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
