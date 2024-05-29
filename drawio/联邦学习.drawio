@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-05-29T05:45:39.519Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="oqmNpWv8_Rhhqv2qbe__" version="24.4.9" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-29T05:47:50.758Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="V0KylXkPyOpgTHF6PgS_" version="24.4.9" type="github">
   <diagram name="第 1 页" id="-fBQ2Zc3S_zsf6xObRtY">
-    <mxGraphModel dx="1419" dy="301" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1690" dy="439" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1408,7 +1408,7 @@
         <mxCell id="nnzFSdzUhEQ9B8_Lj0YN-9" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.users.user;fillColor=#7FBA42;" vertex="1" parent="1">
           <mxGeometry x="600" y="770" width="46" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="nnzFSdzUhEQ9B8_Lj0YN-10" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="nnzFSdzUhEQ9B8_Lj0YN-10" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#009900;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="622.41" y="760" as="sourcePoint" />
             <mxPoint x="622.41" y="690" as="targetPoint" />
@@ -1417,17 +1417,35 @@
         <mxCell id="nnzFSdzUhEQ9B8_Lj0YN-12" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.users.user;fillColor=#DA4026;" vertex="1" parent="1">
           <mxGeometry x="700" y="770" width="46" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="nnzFSdzUhEQ9B8_Lj0YN-13" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="nnzFSdzUhEQ9B8_Lj0YN-13" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#CC0000;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="723.72" y="760" as="sourcePoint" />
             <mxPoint x="723.72" y="690" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nnzFSdzUhEQ9B8_Lj0YN-15" value="正常输入" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="nnzFSdzUhEQ9B8_Lj0YN-15" value="&lt;font color=&quot;#009900&quot;&gt;正常输入&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="558" y="710" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="nnzFSdzUhEQ9B8_Lj0YN-16" value="触发器输入" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="nnzFSdzUhEQ9B8_Lj0YN-16" value="&lt;font color=&quot;#cc0000&quot;&gt;触发器输入&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="646" y="710" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nnzFSdzUhEQ9B8_Lj0YN-18" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#009900;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="770" y="520" as="sourcePoint" />
+            <mxPoint x="810" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nnzFSdzUhEQ9B8_Lj0YN-20" value="正常行为" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+          <mxGeometry x="820" y="500" width="60" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="nnzFSdzUhEQ9B8_Lj0YN-21" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#CC0000;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="770" y="595" as="sourcePoint" />
+            <mxPoint x="810" y="595" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nnzFSdzUhEQ9B8_Lj0YN-22" value="恶意行为" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" vertex="1" parent="1">
+          <mxGeometry x="820" y="575" width="60" height="35" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
