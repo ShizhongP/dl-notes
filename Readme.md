@@ -29,6 +29,8 @@
 
 ###  SGD和Adam优化器
 
+- [NoamOPT 学习率调整](https://blog.csdn.net/lihuanyu520/article/details/132164972)
+
 
 ###   Transformer结构
 
@@ -145,6 +147,14 @@
 - [LOMO：利用有限的资源对大型语言模型进行全参数微调 ](https://zhuanlan.zhihu.com/p/638463057)
 
 
+
+## 推理加速
+
+https://arxiv.org/abs/2405.04437 xAttention
+
+vllm 
+
+lightllm
 
 ## 大模型相关书籍和仓库推荐
 
