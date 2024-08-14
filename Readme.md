@@ -1,4 +1,6 @@
-# 408
+# 计算机基础
+
+[csapp](https://hansimov.gitbook.io/csapp)
 
 ## 计算机网络
 
@@ -12,15 +14,17 @@ OSI 5层，TCP可靠传输，VPN, port , socket...
 
 ## 高数
 
-### 微分与偏导
+微分，偏导，链式法则....等相关定义和计算
 
-## 概率论复习
+## 概率论
 
-### 贝叶斯公式
+**贝叶斯公式**
 
+参考博客：https://zhuanlan.zhihu.com/p/26262151
 
+已知某个事件发生的概率，并且知道在该事件发生的条件下的一些事件发生的概率，构建贝叶斯模型。根据“一些事件”是否发生和“某个事件”发生的概率，去预测在”一些事情“的特征已经具备的条件下，”某个事件“发生的概率
 
-### 大数定理
+**大数定理**
 
 参考博客：https://zhuanlan.zhihu.com/p/259280292
 
@@ -30,7 +34,7 @@ OSI 5层，TCP可靠传输，VPN, port , socket...
 
 - 定义: 对于任意$ \epsilon >0$, 若恒有$ lim_{n-> +\infty}P(|\overline{X_n}-\mathbb{E}(\overline{X_n})|<\epsilon) =1$, 则称随机变量序列$\{X_n\}$满足大数定理
 
-### 中心极限定理
+**中心极限定理**
 
 中心极限定理讨论的是独立随机变量和 $Y_n = \sum_{i=1}^n X_i$ 的极限分布
 
@@ -48,7 +52,7 @@ $Y_n$ 可以看成是很多微小的随机因素$X_1,X_2,...X_n$之和,n很大�
 
   当n较大时 $X\sim N(np,np(1-p))$​
 
-### 最大似然估计
+**最大似然估计**
 
 参考博客: https://zhuanlan.zhihu.com/p/26614750
 
@@ -81,45 +85,20 @@ $Y_n$ 可以看成是很多微小的随机因素$X_1,X_2,...X_n$之和,n很大�
 
 ### 基础的第三方库
 
-matplotlib,numpy,sklearn等,自行STFW学习
+matplotlib,numpy,sklearn等，看对应的手册和文档
 
-###  进阶学习
+###  拓展学习
 
 #### threading
 
-- 线程（请自行STFW深刻理解）
+- 线程
 
   线程是比进程更小的调度单位。具体来说，一个程序的运行状态称做进程，进程被译码称多个指令，由1个或者多个线程分别承担一部分指令的工作，这样指令与指令之间执行的时候，发生切换的是线程。
 
   此时cpu的轮转就不再局限于进程之间，而是可能在同一个进程的不同线程之间的切换，或者不同进程之间的线程的切换。
 
-- 代码实例
-```python
-import threading 
-import time
-def run(id):
-    print(f"Thread {id} is running")
-    time.sleep(1)
-    print(f"Thread {id} is done")
-
-if __name__ == "__main__":
-    
-    threads = []
-    # 创建进程组
-    for i in range(5):
-        t = threading.Thread(target=run, args=(i,))
-        threads.append(t)
-        t.start()
-    # 进程阻塞，直到所有线程完成
-    for t in threads:
-        t.join()
-    #所有进程结束，回到主进程，执行主进程的程序
-    print("All threads are done!")
-```
-
-- 思考
-
-  如果同一个进程的线程之间由需要共享的资源，如何实现，如何避免资源请求冲突（实现互斥锁）？请根据前面的博客或者STFW
+  多线程程序编写的核心在与共享数据的保护和不同线程之间的通信
+- 如果同一个进程的线程之间由需要共享的资源，如何实现，如何避免资源请求冲突（实现互斥锁）？
 
 #### multiprocess
 
@@ -127,35 +106,9 @@ if __name__ == "__main__":
 
   每个进程都拥有一个GIL，这样子多个进程之间就不会受一个GIL的限制，可能并发性高
 
-- 代码实例
-
-```python
-import time
-import multiprocessing
-
-def run(i):
-    print(f"Process {i} is running")
-    time.sleep(1)
-    print(f"Process {i} is done")
-    
-if __name__ == "__main__":
-    
-    #创建进程组 
-    for i in range(5):
-        p = multiprocessing.Process(target=run, args=(i,))
-        p.start()
-    print("All processes are started")
-    
-    #等待所有进程结束
-    for p in multiprocessing.active_children():
-        p.join()
-    
-    print("All processes are done!")
-```
-
 - 思考
 
-  同样的，如何实现多个进程之间的资源共享?(这个很重要)
+  同样的，如何实现多个进程之间的资源共享?
 
 #### async
 
@@ -163,85 +116,39 @@ if __name__ == "__main__":
 
   又称作微线程，相比于线程，线程之间的切换是由**程序本身控制的**，省去了切换进程之间的开销
 
-- 代码实例
+- 思考
 
-```python
-import time
-import asyncio
-async def task():
-    print("Task is started")
-    # 模拟耗时操作 比如读取磁盘的数据
-    await asyncio.sleep(1)
-    return "Task is done"
-    
-async def task2():
-    print("Task2 is started")
-    await asyncio.sleep(1)
-    return "Task2 is done"
-
-if __name__ == "__main__":
-    # 创建事件循环
-    loop = asyncio.get_event_loop()
-    # 创建任务,封装到future中
-    tasks = [asyncio.ensure_future(task()), asyncio.ensure_future(task2())]
-    # 将任务加入事件循环
-    loop.run_until_complete(asyncio.wait(tasks))
-    
-    #获取时间的结果
-    for t in tasks:
-        print(t.result())
-    # 关闭事件循环
-    loop.close()
-```
-
-- 思考以及任务
-
-  协程适合用于那种场景呢？为什么（请从cpu轮转的角度分析），试着使用协程写一个小型爬虫爬取任意一个网站的图片吧
+  协程适合用于那种场景呢？为什么，试着使用协程写一个小型爬虫爬取任意一个网站的图片吧
 
 ## 传统机器学习
 
+对于这些传统的机器学习，聚焦于这些算法的思想就可以了
+
 ### KNN
 
-```python
-import numpy as np
-from collections import Counter
+- 主要思想：
 
-def knn(X_train, y_train, X_test, k):
-    """
-    Implements the k-Nearest Neighbors (kNN) algorithm.
-    
-    Parameters:
-    X_train (numpy.ndarray): Training data features.
-    y_train (numpy.ndarray): Training data labels.
-    X_test (numpy.ndarray): Test data features.
-    k (int): Number of nearest neighbors to consider.
-    
-    Returns:
-    numpy.ndarray: Predicted labels for the test data.
-    """
-    distances = np.sqrt(((X_train - X_test[:, None])**2).sum(axis=2))
-    nearest_indices = np.argsort(distances, axis=1)[:, :k]
-    nearest_labels = y_train[nearest_indices]
-    return np.array([Counter(labels).most_common(1)[0][0] for labels in nearest_labels])
-
-X_train = np.array([[1, 2], [3, 4], [5, 6], [7, 8]])
-y_train = np.array([0, 0, 1, 1])
-X_test = np.array([[2, 3], [6, 7]])
-y_pred = knn(X_train, y_train, X_test, k=3)
-print(y_pred)  # Output: [0 1]
-```
+  在某个点最近的N个邻居中，哪一类的类别最大，就将该点分类为哪一个类别
 
 ### Kmeans
 
+- 主要思想: 无监督聚类，初始化聚类中心，每个点被分配到离他最近的聚类中心上，所有点被分配完之后，更新聚类中心，反复迭代，直到满足条件为止！
+
 ### SVM
 
-最大化类别之间的间隔
+- 主要思想：最大化类别之间的间隔
 
-### PCA 与 LDA
+### PCA 
 
-pca：https://www.zhihu.com/question/41120789/answer/481966094
+参考博客:
+
+- https://www.zhihu.com/question/41120789/answer/481966094
 
 ### 逻辑回归
+
+参考博客:
+
+- https://zhuanlan.zhihu.com/p/74874291
 
 ### 梯度下降法证明
 
@@ -276,6 +183,8 @@ $f(\mathbf{x}+\mathbf{\epsilon}) = f(\mathbf{x}) + \mathbf{\epsilon}^T \nabla f(
 
 通过$ \mathbf{x} \leftarrow \mathbf{x} - \eta \nabla f(\mathbf{x})$​​​来迭代求解
 
+
+
 ## 深度学习
 
 - [PyTorch深度学习快速入门教程](https://www.bilibili.com/video/BV1hE411t7RN/?spm_id_from=333.337.search-card.all.click&vd_source=ec674d7bf8a6cdd072b8017efe791d9f) b站小土堆
@@ -284,7 +193,15 @@ $f(\mathbf{x}+\mathbf{\epsilon}) = f(\mathbf{x}) + \mathbf{\epsilon}^T \nabla f(
 
 - [《动手学深度学习》 — 动手学深度学习 2.0.0 documentation (d2l.ai)](https://zh.d2l.ai/)
 
+第一遍重在理解，整个深度学习任务的流程，理解计算图，反向传播的过程，以及矩阵计算
+
+第二遍重在代码编写，深入理解每个网络设计的原理，常见的接口最好都熟悉
+
+第三遍深入torch框架
+
 ## 卷积神经网络CNN
+
+这部分看李沐的视频够了
 
 ## 图神经网络GNN
 
@@ -337,18 +254,6 @@ LSTM和RNN的输入的区别如下图
 3. 更新阶段:根据 $f_t与c_{t-1}和 i_t与 \tilde{C_t}$计算$c_t$
 4. 输出阶段: $h_t$经过某些变化和$c_t$ 计算当前单元的输出
 
-
-
-<img src="https://colah.github.io/posts/2015-08-Understanding-LSTMs/img/LSTM3-focus-f.png" alt="img" style="zoom: 25%;" /><img src="https://colah.github.io/posts/2015-08-Understanding-LSTMs/img/LSTM3-focus-i.png" alt="img" style="zoom:25%;" />
-
-<img src="https://colah.github.io/posts/2015-08-Understanding-LSTMs/img/LSTM3-focus-C.png" alt="img" style="zoom:25%;" /><img src="https://colah.github.io/posts/2015-08-Understanding-LSTMs/img/LSTM3-focus-o.png" alt="img" style="zoom:25%;" />
-
-<img src="https://pic4.zhimg.com/v2-03c41f0aaee75d920c1ba7bd756ae207_r.png" alt="preview" style="zoom: 25%;" />
-
-
-
-
-
 ## Transformer
 
 **参考博客**
@@ -357,11 +262,11 @@ LSTM和RNN的输入的区别如下图
 - [Transformer模型详解](https://zhuanlan.zhihu.com/p/338817680)
 - [Attention注意力机制与self-attention自注意力机制](https://zhuanlan.zhihu.com/p/265108616)
 - [注意力机制综述](https://zhuanlan.zhihu.com/p/631398525)
-- [张俊林讲解attention](https://zhuanlan.zhihu.com/p/37601161) 文章有点老，但是讲的很好
+- [张俊林讲解attention](https://zhuanlan.zhihu.com/p/37601161) 
 - [kv cache](https://zhuanlan.zhihu.com/p/630832593)
 - [为什么用kv cache 不 cache q?](https://www.zhihu.com/question/653658936/answer/3545520807)
 
-
+- [B站视频讲解:王木头学科学]()
 
 ## Llama2 
 
@@ -369,43 +274,27 @@ LSTM和RNN的输入的区别如下图
 
 - [知乎llama2结构详解](https://zhuanlan.zhihu.com/p/649756898)
 
-### 模型结构
+代码仓库:
+
+- [llama-factory](https://github.com/hiyouga/LLaMA-Factory) 
 
 Llama 2的模型结构与标准的Transformer Decoder结构基本一致，主要由32个 Transformer Block 组成，不同之处主要包括以下几点：
 
 1. 前置的**RMSNorm**层
 2. Q在与K相乘之前，先使用**RoPE**进行位置编码
-3. **K V Cache**，并采用**Group Query Attention**
+3. **K V Cache**，并采用**Group Query Attention（GQA)**
 4. FeedForward层
 
-那么下文将结合具体的代码来展开聊一聊这些差异
-
-#### RMSNorm
-
-Transformer的Normalization层使用的是LayerNormlization层归一化对Tensor进行归一化
-
-**RMSNorm**是LayerNormlization的变体，它省去了求均值的过程，也没有偏置。
-
-#### RoPE旋转位置编码
-
-参考博客: 
+**RoPE旋转位置编码**
 
 - https://zhuanlan.zhihu.com/p/642884818
 - https://zhuanlan.zhihu.com/p/647109286
 
-旋转位置编码，使在计算attention的时候，也够考虑相对位置信息
+**GQA分组注意力查询机制**
 
-可以将模型外推，在预测的时候，可以通过旋转矩阵来达到超过训练长度的预测，还有就是捕获一些相对位置的信息
+- [MHA, MQA, GQA](https://mp.weixin.qq.com/s/_4OxoRLxhOcjGf0Q4Tvp2Q)
 
-####  GQA （分组查询注意力机制）
-
-参考博客：[MHA, MQA, GQA](https://mp.weixin.qq.com/s/_4OxoRLxhOcjGf0Q4Tvp2Q)
-
-###  实战
-
-[llama-factory](https://github.com/hiyouga/LLaMA-Factory) 里面集成了各种技术
-
-## 大模型预训练框架
+## 大模型训练
 
 参考博客：
 
@@ -413,95 +302,77 @@ Transformer的Normalization层使用的是LayerNormlization层归一化对Tensor
 
 ### 传统并行手段
 
-**先了解torch的通信原语**
+**了解下torch的通信原语**
 
 - [知乎教程](https://zhuanlan.zhihu.com/p/478953028)
 - [pytorch文档教程](https://pytorch.org/tutorials/intermediate/dist_tuto.html#distributed-training)
 
-根据教程完成p2p通信和collective communication(独立完成，勿借助任何ai工具或者copy paste)
+根据教程完成p2p通信和collective communication
 
 #### 数据并行
 
-[DP与DDP原理解读](https://blog.csdn.net/ytusdc/article/details/122091284)
+参考:
 
-[原理简单解读和DDP详细使用教程](https://github.com/KaiiZhang/DDP-Tutorial/blob/main/DDP-Tutorial.md)
+- [DP与DDP原理解读](https://blog.csdn.net/ytusdc/article/details/122091284)
 
-**DP(Data Parallel)**
+- [原理简单解读和DDP详细使用教程](https://github.com/KaiiZhang/DDP-Tutorial/blob/main/DDP-Tutorial.md)
 
-- DP是单进程多线程的形式,可以去看torch源码，受python的GIL的限制，至于什么是GIL,请回顾python的基础知识或STFW
+**torch.nn.DP(Data Parallel)**
 
-  ```python
-  #init dataset
-  train_loader = ...
-  test_loader = ...
-  #init model 
-  model = ...
-  optimizer = ...
-  loss_fn = ...
-  
-  # DP
-  model = nn.DataParallel(model)
-  
-  #train 
-  train(model,optimizer,loss_fn)
-  ```
+- DP是单进程多线程的形式,torch源码，受python的GIL的限制，至于什么是GIL,回顾python的基础知识
 
 **DDP(Data Distributed Parallel)**
 
-- 多进程的形式，一般一张显卡对应一个进程
+- 多进程的形式，一般一张显卡对应一个进程,通过多进程，绕过了GIL,性能较多线程可能更好
 
 #### 流水线并行
 
-
+视频讲解:https://www.bilibili.com/video/BV1v34y1E7zu/?spm_id_from=333.999.0.0
 
 #### 张量并行（模型并行）
 
-
+就是下面的Megatron
 
 ### Megatron-LM
 
-https://zhuanlan.zhihu.com/p/366906920
+参考博客:https://zhuanlan.zhihu.com/p/366906920
+
+视频讲解：https://www.bilibili.com/video/BV1nB4y1R7Yz/?spm_id_from=333.999.0.0
 
 ### Deepspeed 
 
+区别于其他框架的最大特点是Zero
 
+文档:https://www.deepspeed.ai/getting-started/
+
+视频讲解：https://www.bilibili.com/video/BV1tY411g7ZT/?spm_id_from=333.999.0.0
 
 ### Flashattention
 
-### Flashattention v2
+理解原理！现在很多算法已经集成了Flashattention了，大部分不需要自己实现。
 
-### Flashattention v3
+## 大模型推理部署
 
-## 大模型推理部署技术
-
-论文推荐：[A Survey on Efficient Inference for Large Language Models](https://arxiv.org/abs/2404.14294)
+论文推荐阅读：[A Survey on Efficient Inference for Large Language Models](https://arxiv.org/abs/2404.14294)
 
 ### vLLM
 
+仓库：https://github.com/vllm-project/vllm
+
 ### Light-llm
+
+仓库：https://github.com/ModelTC/lightllm
 
 ### TensorRT
 
-## 大模型微调技术
+仓库：https://github.com/NVIDIA/TensorRT-LLM
+
+## 大模型微调
 
 **全参数微调  与 高效参数微调**
 
 - 全参数微调: 将预训练模型作为初始化权重，对全部参数都进行更新
 - 高效参数微调: 通常指对部分参数进行更新
-
-**什么是微调?个人理解（瞎写）**
-
-​	对于一个预训练好的模型，如果我们希望通过重新调整一些模型参数，使得这个新的模型在新的任务上能有更好的表现，是不是感觉是废话，因为我这讲的不就是微调吗:) 。
-
-​	前面已经对微调进行大致的分类的对吧，如果在原来整个模型上继续训练的叫做全参数微调，但这样子的话，成本就和你做预训练不就一样了吗。这样子产生了一个问题，如果某个机构开源了一个大模型，整个模型是在4张A800(80GB)上完成训练的，如果其他人希望能使用这个开源模型做一些下游任务，如果仍采用全参数微调，也得需要4张A800啊，那如果我没有那么多卡(没钱啊)，我要怎么完成这个任务呢，我们希望的是只训练一部分参数（不要全部参数都拿去训练了），就能在这个下游任务上取到好的结果，这就叫做**高效参数微调**（其实我觉得叫它**部分参数微调**更合适）。
-
-### 提示词微调
-
-### 指令微调
-
-指令微调是一种通过在由（指令，输出）对组成的数据集上进一步训练LLMs的过程。其中，指令代表模型的人类指令，输出代表遵循指令的期望输出。这个过程有助于弥合LLMs的下一个词预测目标与用户让LLMs遵循人类指令的目标之间的差距。
-
-指令微调可以被视为有监督微调（Supervised Fine-Tuning，SFT）的一种特殊形式。但是，它们的目标依然有差别。**SFT是一种使用标记数据对预训练模型进行微调的过程，以便模型能够更好地执行特定任务。（**也就是说只有带标签的数据输入？**）**而指令微调是一种通过在包括（指令，输出）对的数据集上进一步训练大型语言模型（LLMs）的过程，以增强LLMs的能力和可控性。**指令微调的特殊之处在于其数据集的结构，即由人类指令和期望的输出组成的配对。**这种结构使得指令微调专注于让模型理解和遵循人类指令
 
 ### LoRA
 
@@ -511,45 +382,45 @@ https://zhuanlan.zhihu.com/p/366906920
 
 代码仓库: 
 
-LoRA，全称 Low-Rank Adaptation, 低秩适配?（看名字就知道和矩阵的秩有关）
+LoRA，全称 Low-Rank Adaptation
 
 ​	对于预训练模型的参数$H$，我们在其上面进行微调（参数的更新），假设参数的变化为$ \Delta H  $ ,  那么更新过后的模型可以表示为$ H +\Delta H$​ 
 
 ​	具体一点，对于模型内的某一层的矩阵$W$，我们假设预训练模型这一层的参数为$W_0$， 假设其变化的参数为$\Delta W$，那么这一层参数上的更新可以表示为$ W_0+ \Delta W$。其中$W \in \mathbb{R}^{d \times k}$, 则也有$W_0,\Delta W \in \mathbb{R}^{d \times k}$，（形状要一样的啊，要不然两个矩阵怎么相加）
 
-​	进一步，$\Delta W$是不是可以表示成两个矩阵相乘的形式呢？(肯定可以啊)。我们假设$\Delta W = AB$，其中$A \in \mathbb{R}^{d \times r}, B \in \mathbb{R}^{r \times k},r\ll min(d,r)$，那么对于那么这一层参数的更新就可以表示为$W + \Delta W = W+ AB$。$r$就是LoRA中的秩序了，通常$r=1,2,3,4,8$​都不是一个太大的值，所以这就叫低秩。到这里LoRA的主体架构就讲完了，剩下的部分看论文或者博客去理解了。
+​	进一步，$\Delta W$是不是可以表示成两个矩阵相乘的形式呢？。我们假设$\Delta W = AB$，其中$A \in \mathbb{R}^{d \times r}, B \in \mathbb{R}^{r \times k},r\ll min(d,r)$，那么对于那么这一层参数的更新就可以表示为$W + \Delta W = W+ AB$。$r$就是LoRA中的秩序了，通常$r=1,2,3,4,8$​​都不是一个太大的值，所以这就叫低秩。到这里LoRA的主要思想就讲完了。
 
-## 大模型轻量化技术
+### QLoRA
 
-### 剪枝
+区别于LoRA,是在训练时进行量化,原理也是可以大致了解
 
-#### 结构化剪枝
-
-#### 非结构化剪枝
-
-### 蒸馏
-
-### 量化
+## 量化技术
 
 #### GPTQ
 
 论文：https://arxiv.org/abs/2210.17323
 
-实战仓库: 
+代码仓库: https://github.com/IST-DASLab/gptq
+
+[AutoGPTQ](https://github.com/AutoGPTQ/AutoGPTQ),这个仓库集成了更多功能，支持很多模型
 
 #### AWQ
 
+原理大致了解即可
+
+论文:https://arxiv.org/abs/2306.00978
+
+代码仓库:https://github.com/mit-han-lab/llm-awq
+
 ## 上下文缓存技术
 
-目前这方面的文献还不是很多，开源的技术不是太多
+如何解决 kv cache过长的问题!
 
 https://arxiv.org/abs/2406.17565
 
-## 论文推荐
+## 阅读推荐
 
-
-
-## 仓库推荐
+[深入理解pytorch机制](https://www.cnblogs.com/rossiXYZ/p/15518457.html)
 
 [llm-action 大模型实战和技术路线](https://github.com/liguodongiot/llm-action?tab=readme-ov-file)
 
