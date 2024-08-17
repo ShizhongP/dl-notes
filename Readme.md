@@ -30,27 +30,19 @@ OSI 5层，TCP可靠传输，VPN, port , socket...
 
 大数定理讨论的是多个随机变量的平均$$ \frac{1}{n}\sum_{i=1}^n X_i$$的渐进性质
 
-对于一系列随机变量 $ \{X_n\}$，设每个随机变量都有期望。由于随机变量之和 $\sum_{i=1}^n X_i$ 很有可能发散到无穷大，我们转而考虑随机变量的均值 $\overline{X_n} = \frac{1}{n} \sum_{i=1}^n X_i $和其期望 $ \mathbb{E}[\overline{X_n}] $之间的距离。若 $ {X_n} $满足一定条件，当n足够大时，这个距离会以非常大的概率接近0，这就是大数定律的主要思想。
 
-- 定义: 对于任意$ \epsilon >0 $, 若恒有$  lim_{n-> +\infty}P(|\overline{X_n}-\mathbb{E}(\overline{X_n})|<\epsilon) =1 $, 则称随机变量序列$ \{X_n\} $满足大数定理
 
 **中心极限定理**
 
 中心极限定理讨论的是独立随机变量和 $Y_n = \sum_{i=1}^n X_i$ 的极限分布
 
-$Y_n$ 可以看成是很多微小的随机因素$$X_1,X_2,...X_n$$之和,n很大，我们关心在什么条件下面$$Y_n$$的极限分布是正态分布
-
-- 独立同分布中心极限定理（林德伯格-列维中心极限定理)
-
-  如果随机变量$$X_1,X_2....X_n$$相互独立，且分布相同，他们的数学期望$$ \mu $$和方差$$\sigma^2$$一致,则随机变量
-
-  $ Y_n = \frac{\sum_{i=1}^nX_i - n\mu}{\sqrt{n}\sigma}$,当n较大的时候 $Y_n \sim N(0,1)$ ,近似标准正态分布，即$$ \sum_{i=1}^nX_i \sim N(n\mu,n\sigma^2)$$
+$Y_n$ 
 
 - 二项分布中心极限定理(棣莫弗-拉普拉斯中心极限定理)
 
   $X$是n次伯努利实验中事件A出现的次数,p是每次时间A发生的概率，即$X \sim B(n,p)$
 
-  当n较大时 $X\sim N(np,np(1-p))$$
+  当n较大时 $X\sim N(np,np(1-p))$
 
 **最大似然估计**
 
@@ -155,34 +147,8 @@ matplotlib,numpy,sklearn等，看对应的手册和文档
 - 最优化问题,局部最小值不一定是全局最优解，通过添加一些随机噪声/扰动能够跳出局部最优解
 - 训练误差指的是在训练集上的表现，泛化误差指的是在全部数据集上的表现，有时可以说是在测试集上的表现
 
-#### 一维梯度下降
-
-考虑一维函数的随机梯度下降，一个连续可微实值函数$$f : \mathbb{R} \rightarrow \mathbb{R}$$ 利用泰勒展开可以得到
-
-$$ f(x+ \epsilon)= f(x) + \epsilon f'(x)+ O(\epsilon^2)$$
-
-即在一阶近似中，$$f(x+\epsilon)$$可通过x出的函数值$$f(x)$$和一阶导数$$f'(x)$$近似得出。我们可以假定负梯度方向上移动的$$\epsilon$$会减少$$f$$。为了简单起见，我们选择固定的步长$$\eta>0$$,然后令$$ \epsilon = -\eta f'(x)$$，然后将其代入泰勒展开式可以得到
-
-$$f(x-\eta f'(x)) = f(x) -\eta f'^2(x)+O(\eta^2 f'^2(x))$$
-
-如果$$f'(x) \ne 0$$导数并没有消失，那么可以将上面的泰勒展开式继续展开，因为$$\eta^2 f'^2(x)>0$$ 。此外，我们也可以令$$\eta$$小到让高阶函数不那么相关，因此
-
-$$ f(x-\eta f'(x)) \approx f(x)$$
-
-这就意味着我们可以使用$ x \leftarrow x-\eta f'(x)$来迭代x。直到某个终止条件停止迭代
-
-#### 多维梯度下降
-
-和一维梯度下降类似的过程,考虑变量$$\mathbf{x} = [x_1,x_2,...x_d]^T$$ 的情况。即目标函数$$f: \mathbb{R}^d \rightarrow \mathbb{R}$$，将向量映射为标量，相应的他的梯度也是多元的，由d个偏导数组成的向量:
-
-$ \nabla f= [\frac{\partial f(\mathbf(x))}{\partial x_1}, \frac{\partial f(\mathbf{x})}{\partial x_2},...\frac{\partial f(\mathbf(x))}{\partial x_d}]^T $​
-
-梯度中的每个偏导数 $$ \partial f/ \partial x_i$$代表了当输入了$$x_i$$时f在$$\mathbf{x}$$处的变化率。和单变量一样，考虑使用泰勒展开式来近似
-
-$$f(\mathbf{x}+\mathbf{\epsilon}) = f(\mathbf{x}) + \mathbf{\epsilon}^T \nabla f(\mathbf{x}) + O( \lvert\lvert\epsilon^2 \rvert\rvert)$$
-
-通过$$ \mathbf{x} \leftarrow \mathbf{x} - \eta \nabla f(\mathbf{x})$$​​​来迭代求解
-
+参考博客
+- https://zh.d2l.ai/chapter_optimization/gd.html
 
 
 ## 深度学习
