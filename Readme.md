@@ -385,7 +385,7 @@ LoRA，全称 Low-Rank Adaptation
 https://arxiv.org/abs/2406.17565
 
 ## 阅读推荐
-
+[自动微分](https://liebing.org.cn/automatic-differentiation.html#Reference)
 [深入理解pytorch机制](https://www.cnblogs.com/rossiXYZ/p/15518457.html)
 
 [llm-action 大模型实战和技术路线](https://github.com/liguodongiot/llm-action?tab=readme-ov-file)
