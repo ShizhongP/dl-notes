@@ -390,5 +390,6 @@ https://arxiv.org/abs/2406.17565
 
 [llm-action 大模型实战和技术路线](https://github.com/liguodongiot/llm-action?tab=readme-ov-file)
 
+[micrograd 小型深度学习，仅用200行不到的代码!](https://github.com/karpathy/micrograd)
 ## 论文阅读推荐
 [papers](https://github.com/FZU-psz/dl-notes/tree/main/papers)
