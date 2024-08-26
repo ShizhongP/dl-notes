@@ -1,6 +1,6 @@
 # 计算机基础
 
-[csapp](https://hansimov.gitbook.io/csapp)
+[csapp 计算机基础课](https://hansimov.gitbook.io/csapp)
 
 ## 计算机网络
 
@@ -8,7 +8,7 @@ OSI 5层，TCP可靠传输，VPN, port , socket...
 
 ## 操作系统
 
-进程，线程，调度算法，并发控制，地址转换，页表，cache...
+进程，线程，死锁，调度算法，并发控制，地址转换，页表，cache...
 
 # 数学基础
 
@@ -20,33 +20,29 @@ OSI 5层，TCP可靠传输，VPN, port , socket...
 
 **贝叶斯公式**
 
-参考博客：https://zhuanlan.zhihu.com/p/26262151
+参考博客：<https://zhuanlan.zhihu.com/p/26262151>
 
 已知某个事件发生的概率，并且知道在该事件发生的条件下的一些事件发生的概率，构建贝叶斯模型。根据“一些事件”是否发生和“某个事件”发生的概率，去预测在”一些事情“的特征已经具备的条件下，”某个事件“发生的概率
 
 **大数定理**
 
-参考博客：https://zhuanlan.zhihu.com/p/259280292
+参考博客：<https://zhuanlan.zhihu.com/p/259280292>
 
-大数定理讨论的是多个随机变量的平均$$ \frac{1}{n}\sum_{i=1}^n X_i$$的渐进性质
-
-
+大数定理讨论的是多个随机变量的平均 $ \frac{1}{n}\sum_{i=1}^n X_i$ 的渐进性质
 
 **中心极限定理**
 
-中心极限定理讨论的是独立随机变量和 $Y_n = \sum_{i=1}^n X_i$ 的极限分布
-
-$Y_n$ 
+中心极限定理讨论的是独立随机变量和 $Y_n = \sum_{i=1}^n X_i$ 的极限分布 $Y_n$
 
 - 二项分布中心极限定理(棣莫弗-拉普拉斯中心极限定理)
 
-  $X$是n次伯努利实验中事件A出现的次数,p是每次时间A发生的概率，即$X \sim B(n,p)$
+  $X$ 是n次伯努利实验中事件A出现的次数,p是每次时间A发生的概率，即 $X \sim B(n,p)$
 
   当n较大时 $X\sim N(np,np(1-p))$
 
 **最大似然估计**
 
-参考博客: https://zhuanlan.zhihu.com/p/26614750
+参考博客: <https://zhuanlan.zhihu.com/p/26614750>
 
 - 极大似然估计，通俗理解来说，**就是利用已知的样本结果信息，反推最具有可能（最大概率）导致这些样本结果出现的模型参数值！**
 
@@ -73,13 +69,13 @@ $Y_n$
 
 ### 基本语法和概念
 
-参考博客：https://www.liujiangblog.com/course/python/78
+参考博客：<https://www.liujiangblog.com/course/python/78>
 
 ### 基础的第三方库
 
 matplotlib,numpy,sklearn等，看对应的手册和文档
 
-###  拓展学习
+### 拓展学习
 
 #### threading
 
@@ -130,17 +126,17 @@ matplotlib,numpy,sklearn等，看对应的手册和文档
 
 - 主要思想：最大化类别之间的间隔
 
-### PCA 
+### PCA
 
 参考博客:
 
-- https://www.zhihu.com/question/41120789/answer/481966094
+- <https://www.zhihu.com/question/41120789/answer/481966094>
 
 ### 逻辑回归
 
 参考博客:
 
-- https://zhuanlan.zhihu.com/p/74874291
+- <https://zhuanlan.zhihu.com/p/74874291>
 
 ### 梯度下降法证明
 
@@ -148,8 +144,8 @@ matplotlib,numpy,sklearn等，看对应的手册和文档
 - 训练误差指的是在训练集上的表现，泛化误差指的是在全部数据集上的表现，有时可以说是在测试集上的表现
 
 参考博客
-- https://zh.d2l.ai/chapter_optimization/gd.html
 
+- <https://zh.d2l.ai/chapter_optimization/gd.html>
 
 ## 深度学习
 
@@ -171,11 +167,11 @@ matplotlib,numpy,sklearn等，看对应的手册和文档
 
 ## 图神经网络GNN
 
-参考博客: 
+参考博客:
 
-- https://zhuanlan.zhihu.com/p/75307407
+- <https://zhuanlan.zhihu.com/p/75307407>
 
-- https://github.com/SivilTaram/Graph-Neural-Network-Note
+- <https://github.com/SivilTaram/Graph-Neural-Network-Note>
 
 GNN 就是做了这么一件事情：**利用图的节点信息去生成节点（图）的 Embedding 表示**。就是那么一个 Embedding 的方法。
 
@@ -185,9 +181,9 @@ GNN 就是做了这么一件事情：**利用图的节点信息去生成节点�
 
 参考博客：
 
-- https://zhuanlan.zhihu.com/p/32085405
+- <https://zhuanlan.zhihu.com/p/32085405>
 
-- https://colah.github.io/posts/2015-08-Understanding-LSTMs/
+- <https://colah.github.io/posts/2015-08-Understanding-LSTMs/>
 
 RNN 中的单个神经元如下所示
 
@@ -209,32 +205,32 @@ LSTM和RNN的输入的区别如下图
 
 <img src="https://pic4.zhimg.com/80/v2-e4f9851cad426dfe4ab1c76209546827_720w.webp" alt="img" style="zoom:50%;" />
 
-相比于RNN只有一个传递状态**h**, LSTM有两个传递状态$$c^t和 h^t$$, (lstm 的$$h^t$$应该对应的是rnn的$$h^t$$​)
+相比于RNN只有一个传递状态**h**, LSTM有两个传递状态 $c^t和 h^t$ , (lstm 的 $h^t$ 应该对应的是rnn的 $h^t$ ​)
 
-通常$$c^t$$是上一个状态传来的$$c^{t-1}$$​加上某些数值
+通常 $c^t$ 是上一个状态传来的 $c^{t-1}$ ​加上某些数值
 
 具体的计算结构如下
 
-1. 遗忘阶段: 计算$$f_t$$,选择那些元素需要被遗忘
-2. 记忆阶段: 计算$$i_t和\tilde{C_t}$$​,然后将两者按元素相乘，选择那些元素需要被记忆
-3. 更新阶段:根据 $$f_t与c_{t-1}和 i_t与 \tilde{C_t}$$计算$$c_t$$
-4. 输出阶段: $$h_t$$经过某些变化和$$c_t$$ 计算当前单元的输出
+1. 遗忘阶段: 计算 $ f_t $,选择那些元素需要被遗忘
+2. 记忆阶段: 计算 $ i_t 和 \tilde{C_t} $​,然后将两者按元素相乘，选择那些元素需要被记忆
+3. 更新阶段:根据 $f_t与c_{t-1}和 i_t与 \tilde{C_t}$计算 $ c_t $
+4. 输出阶段: $h_t$经过某些变化和$c_t$ 计算当前单元的输出
 
 ## Transformer
 
 **参考博客**
 
-- [The Illustrated Transformer – Jay Alammar ](https://jalammar.github.io/illustrated-transformer/)
+- [The Illustrated Transformer – Jay Alammar](https://jalammar.github.io/illustrated-transformer/)
 - [Transformer模型详解](https://zhuanlan.zhihu.com/p/338817680)
 - [Attention注意力机制与self-attention自注意力机制](https://zhuanlan.zhihu.com/p/265108616)
 - [注意力机制综述](https://zhuanlan.zhihu.com/p/631398525)
-- [张俊林讲解attention](https://zhuanlan.zhihu.com/p/37601161) 
+- [张俊林讲解attention](https://zhuanlan.zhihu.com/p/37601161)
 - [kv cache](https://zhuanlan.zhihu.com/p/630832593)
 - [为什么用kv cache 不 cache q?](https://www.zhihu.com/question/653658936/answer/3545520807)
 
 - [B站视频讲解:王木头学科学]()
 
-## Llama2 
+## Llama2
 
 参考博客
 
@@ -242,7 +238,7 @@ LSTM和RNN的输入的区别如下图
 
 代码仓库:
 
-- [llama-factory](https://github.com/hiyouga/LLaMA-Factory) 
+- [llama-factory](https://github.com/hiyouga/LLaMA-Factory)
 
 Llama 2的模型结构与标准的Transformer Decoder结构基本一致，主要由32个 Transformer Block 组成，不同之处主要包括以下几点：
 
@@ -253,8 +249,8 @@ Llama 2的模型结构与标准的Transformer Decoder结构基本一致，主要
 
 **RoPE旋转位置编码**
 
-- https://zhuanlan.zhihu.com/p/642884818
-- https://zhuanlan.zhihu.com/p/647109286
+- <https://zhuanlan.zhihu.com/p/642884818>
+- <https://zhuanlan.zhihu.com/p/647109286>
 
 **GQA分组注意力查询机制**
 
@@ -264,7 +260,7 @@ Llama 2的模型结构与标准的Transformer Decoder结构基本一致，主要
 
 参考博客：
 
-- https://zhuanlan.zhihu.com/p/688873027
+- <https://zhuanlan.zhihu.com/p/688873027>
 
 ### 传统并行手段
 
@@ -293,7 +289,7 @@ Llama 2的模型结构与标准的Transformer Decoder结构基本一致，主要
 
 #### 流水线并行
 
-视频讲解:https://www.bilibili.com/video/BV1v34y1E7zu/?spm_id_from=333.999.0.0
+视频讲解:<https://www.bilibili.com/video/BV1v34y1E7zu/?spm_id_from=333.999.0.0>
 
 #### 张量并行（模型并行）
 
@@ -301,17 +297,17 @@ Llama 2的模型结构与标准的Transformer Decoder结构基本一致，主要
 
 ### Megatron-LM
 
-参考博客:https://zhuanlan.zhihu.com/p/366906920
+参考博客:<https://zhuanlan.zhihu.com/p/366906920>
 
-视频讲解：https://www.bilibili.com/video/BV1nB4y1R7Yz/?spm_id_from=333.999.0.0
+视频讲解：<https://www.bilibili.com/video/BV1nB4y1R7Yz/?spm_id_from=333.999.0.0>
 
-### Deepspeed 
+### Deepspeed
 
 区别于其他框架的最大特点是Zero
 
-文档:https://www.deepspeed.ai/getting-started/
+文档:<https://www.deepspeed.ai/getting-started/>
 
-视频讲解：https://www.bilibili.com/video/BV1tY411g7ZT/?spm_id_from=333.999.0.0
+视频讲解：<https://www.bilibili.com/video/BV1tY411g7ZT/?spm_id_from=333.999.0.0>
 
 ### Flashattention
 
@@ -323,15 +319,15 @@ Llama 2的模型结构与标准的Transformer Decoder结构基本一致，主要
 
 ### vLLM
 
-仓库：https://github.com/vllm-project/vllm
+仓库：<https://github.com/vllm-project/vllm>
 
 ### Light-llm
 
-仓库：https://github.com/ModelTC/lightllm
+仓库：<https://github.com/ModelTC/lightllm>
 
 ### TensorRT
 
-仓库：https://github.com/NVIDIA/TensorRT-LLM
+仓库：<https://github.com/NVIDIA/TensorRT-LLM>
 
 ## 大模型微调
 
@@ -342,19 +338,19 @@ Llama 2的模型结构与标准的Transformer Decoder结构基本一致，主要
 
 ### LoRA
 
-论文地址:  https://arxiv.org/pdf/2106.09685
+论文地址:  <https://arxiv.org/pdf/2106.09685>
 
-参考博客:  https://zhuanlan.zhihu.com/p/623543497
+参考博客:  <https://zhuanlan.zhihu.com/p/623543497>
 
-代码仓库: 
+代码仓库:
 
 LoRA，全称 Low-Rank Adaptation
 
-​	对于预训练模型的参数$$H$$，我们在其上面进行微调（参数的更新），假设参数的变化为$$ \Delta H  $$ ,  那么更新过后的模型可以表示为$$ H +\Delta H$$​ 
+​ 对于预训练模型的参数$H$，我们在其上面进行微调（参数的更新），假设参数的变化为$ \Delta H  $ ,  那么更新过后的模型可以表示为$ H +\Delta H$​
 
-​	具体一点，对于模型内的某一层的矩阵$$W$$，我们假设预训练模型这一层的参数为$$W_0$$， 假设其变化的参数为$$\Delta W$$，那么这一层参数上的更新可以表示为$$ W_0+ \Delta W$$。其中$$W \in \mathbb{R}^{d \times k}$$, 则也有$$W_0,\Delta W \in \mathbb{R}^{d \times k}$$，（形状要一样的啊，要不然两个矩阵怎么相加）
+​ 具体一点，对于模型内的某一层的矩阵$W$，我们假设预训练模型这一层的参数为$W_0$， 假设其变化的参数为$\Delta W$，那么这一层参数上的更新可以表示为$ W_0+ \Delta W$。其中$W \in \mathbb{R}^{d \times k}$, 则也有$W_0,\Delta W \in \mathbb{R}^{d \times k}$，（形状要一样的啊，要不然两个矩阵怎么相加）
 
-​	进一步，$$\Delta W$$是不是可以表示成两个矩阵相乘的形式呢？。我们假设$$\Delta W = AB$$，其中$$A \in \mathbb{R}^{d \times r}, B \in \mathbb{R}^{r \times k},r\ll min(d,r)$$，那么对于那么这一层参数的更新就可以表示为$$W + \Delta W = W+ AB$$。$$r$$就是LoRA中的秩序了，通常$$r=1,2,3,4,8$$​​都不是一个太大的值，所以这就叫低秩。到这里LoRA的主要思想就讲完了。
+​ 进一步，$\Delta W $是不是可以表示成两个矩阵相乘的形式呢？。我们假设$\Delta W = AB$，其中$A \in \mathbb{R}^{d \times r}, B \in \mathbb{R}^{r \times k},r\ll min(d,r)$，那么对于那么这一层参数的更新就可以表示为 $W + \Delta W = W+ AB$ 。$r$就是LoRA中的秩序了，通常$r=1,2,3,4,8$​​都不是一个太大的值，所以这就叫低秩。到这里LoRA的主要思想就讲完了。
 
 ### QLoRA
 
@@ -364,9 +360,9 @@ LoRA，全称 Low-Rank Adaptation
 
 #### GPTQ
 
-论文：https://arxiv.org/abs/2210.17323
+论文：<https://arxiv.org/abs/2210.17323>
 
-代码仓库: https://github.com/IST-DASLab/gptq
+代码仓库: <https://github.com/IST-DASLab/gptq>
 
 [AutoGPTQ](https://github.com/AutoGPTQ/AutoGPTQ),这个仓库集成了更多功能，支持很多模型
 
@@ -374,22 +370,25 @@ LoRA，全称 Low-Rank Adaptation
 
 原理大致了解即可
 
-论文:https://arxiv.org/abs/2306.00978
+论文:<https://arxiv.org/abs/2306.00978>
 
-代码仓库:https://github.com/mit-han-lab/llm-awq
+代码仓库:<https://github.com/mit-han-lab/llm-awq>
 
 ## 上下文缓存技术
 
 如何解决 kv cache过长的问题!
 
-https://arxiv.org/abs/2406.17565
+<https://arxiv.org/abs/2406.17565>
 
 ## 阅读推荐
+
 [自动微分](https://liebing.org.cn/automatic-differentiation.html#Reference)
 [深入理解pytorch机制](https://www.cnblogs.com/rossiXYZ/p/15518457.html)
 
 [llm-action 大模型实战和技术路线](https://github.com/liguodongiot/llm-action?tab=readme-ov-file)
 
-[micrograd 小型深度学习，仅用200行不到的代码!](https://github.com/karpathy/micrograd)
+[micrograd 小型深度学习框架，仅用200行不到的代码!](https://github.com/karpathy/micrograd)
+
 ## 论文阅读推荐
+
 [papers](https://github.com/FZU-psz/dl-notes/tree/main/papers)
