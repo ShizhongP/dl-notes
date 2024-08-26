@@ -28,7 +28,7 @@ OSI 5层，TCP可靠传输，VPN, port , socket...
 
 参考博客：<https://zhuanlan.zhihu.com/p/259280292>
 
-大数定理讨论的是多个随机变量的平均 $ \frac{1}{n}\sum_{i=1}^n X_i$ 的渐进性质
+大数定理讨论的是多个随机变量的平均 $\frac{1}{n}\sum_{i=1}^n X_i$ 的渐进性质
 
 **中心极限定理**
 
@@ -189,11 +189,11 @@ RNN 中的单个神经元如下所示
 
 <img src="https://pic4.zhimg.com/80/v2-f716c816d46792b867a6815c278f11cb_720w.webp" alt="img" style="zoom:50%;" />
 
-**x**表示当前状态的输入, **h**表示接受的上一个节点的输入, **y**是当前状态的输出，**h'**是传递给下一个状态的输入
+**x** 表示当前状态的输入, **h** 表示接受的上一个节点的输入, **y** 是当前状态的输出，**h'** 是传递给下一个状态的输入
 
-从上面的图片可以看到，**h'**的计算与当前状态**x**和上一节点的输入**h**有关，**y**的计算通常由**h'**计算得来
+从上面的图片可以看到，**h'** 的计算与当前状态 **x** 和上一节点的输入 **h** 有关，**y** 的计算通常由 **h'** 计算得来
 
-如干个这个样的单元组成一个序列即为**RNN(recurrent neural network)**循环神经网络,如下图所示
+如干个这个样的单元组成一个序列即为 **RNN(recurrent neural network)** 循环神经网络,如下图所示
 
 <img src="https://pic2.zhimg.com/80/v2-71652d6a1eee9def631c18ea5e3c7605_720w.webp" alt="img" style="zoom:50%;" />
 
@@ -230,6 +230,8 @@ LSTM和RNN的输入的区别如下图
 
 - [B站视频讲解:王木头学科学]()
 
+**源码实现**
+[Transformer src](https://github.com/FZU-psz/dl-notes/tree/main/src/model/transformer)
 ## Llama2
 
 参考博客
