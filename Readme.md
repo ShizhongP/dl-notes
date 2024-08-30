@@ -232,6 +232,7 @@ LSTM和RNN的输入的区别如下图
 
 **源码实现**
 [Transformer src](https://github.com/FZU-psz/dl-notes/tree/main/src/model/transformer)
+
 ## Llama2
 
 参考博客
@@ -348,11 +349,11 @@ Llama 2的模型结构与标准的Transformer Decoder结构基本一致，主要
 
 LoRA，全称 Low-Rank Adaptation
 
-​ 对于预训练模型的参数$H$，我们在其上面进行微调（参数的更新），假设参数的变化为$ \Delta H  $ ,  那么更新过后的模型可以表示为$ H +\Delta H$​
+​ 对于预训练模型的参数$H$，我们在其上面进行微调（参数的更新），假设参数的变化为 $\Delta H$ ,  那么更新过后的模型可以表示为 $H +\Delta H$​
 
-​ 具体一点，对于模型内的某一层的矩阵$W$，我们假设预训练模型这一层的参数为$W_0$， 假设其变化的参数为$\Delta W$，那么这一层参数上的更新可以表示为$ W_0+ \Delta W$。其中$W \in \mathbb{R}^{d \times k}$, 则也有$W_0,\Delta W \in \mathbb{R}^{d \times k}$，（形状要一样的啊，要不然两个矩阵怎么相加）
+​ 具体一点，对于模型内的某一层的矩阵$W$，我们假设预训练模型这一层的参数为$W_0$， 假设其变化的参数为$\Delta W$，那么这一层参数上的更新可以表示为 $W_0+ \Delta W$ 。其中 $W \in \mathbb{R}^{d \times k}$ , 则也有 $W_0,\Delta W \in \mathbb{R}^{d \times k}$ ，（形状要一样的啊，要不然两个矩阵怎么相加）
 
-​ 进一步，$\Delta W $是不是可以表示成两个矩阵相乘的形式呢？。我们假设$\Delta W = AB$，其中$A \in \mathbb{R}^{d \times r}, B \in \mathbb{R}^{r \times k},r\ll min(d,r)$，那么对于那么这一层参数的更新就可以表示为 $W + \Delta W = W+ AB$ 。$r$就是LoRA中的秩序了，通常$r=1,2,3,4,8$​​都不是一个太大的值，所以这就叫低秩。到这里LoRA的主要思想就讲完了。
+​ 进一步，$\Delta W$ 是不是可以表示成两个矩阵相乘的形式呢？。我们假设 $\Delta W = AB$，其中 $A \in \mathbb{R}^{d \times r}, B \in \mathbb{R}^{r \times k},r\ll min(d,r)$ ，那么对于那么这一层参数的更新就可以表示为 $W + \Delta W = W+ AB$ 。$r$ 就是LoRA中的秩序了，通常 $r=1,2,3,4,8$​ ​都不是一个太大的值，所以这就叫低秩。到这里LoRA的主要思想就讲完了。
 
 ### QLoRA
 
