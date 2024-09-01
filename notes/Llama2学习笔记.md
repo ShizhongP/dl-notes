@@ -2,7 +2,7 @@
 
 [知乎llama2结构详解](https://zhuanlan.zhihu.com/p/649756898)
 
-## Llama2 
+## Llama2
 
 ### 模型结构
 
@@ -23,19 +23,18 @@ Transformer的Normalization层使用的是LayerNormlization层归一化对Tensor
 
 **RMSNorm**是LayerNormlization的变体，它省去了求均值的过程，也没有偏置  
 
-
+$$RMSNorm(x) = \frac{x}{\sqrt{\frac{1}{N} \sum_{i=1}^{N}x_i^2 - \epsilon}}$$
 
 #### RoPE旋转位置编码
 
-https://zhuanlan.zhihu.com/p/642884818
+<https://zhuanlan.zhihu.com/p/642884818>
 
-旋转位置编码，使在计算attention的时候，也够考虑相对位置信息
-
-#### KV cache && GQA （分组查询注意力机制）
+- 旋转位置编码，使在计算attention的时候，也够考虑相对位置信息
+- 增强模型的外推性，可以使得推理时输入的长度可以大于训练时的长度
+#### KV cache
 
 [kv cache](https://zhuanlan.zhihu.com/p/630832593)
 
+#### GQA （分组查询注意力机制）
+
 [MHA, MQA, GQA](https://mp.weixin.qq.com/s/_4OxoRLxhOcjGf0Q4Tvp2Q)
-
-
-
