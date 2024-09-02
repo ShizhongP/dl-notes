@@ -32,8 +32,20 @@ $$RMSNorm(x) = \frac{x}{\sqrt{\frac{1}{N} \sum_{i=1}^{N}x_i^2 - \epsilon}}$$
 - 旋转位置编码，使在计算attention的时候，也够考虑相对位置信息
 - 增强模型的外推性，可以使得推理时输入的长度可以大于训练时的长度
 #### KV cache
-
 [kv cache](https://zhuanlan.zhihu.com/p/630832593)
+
+[https://blog.csdn.net/ningyanggege/article/details/134564203]
+
+通常在推理阶段，可以分为两个阶段，prefill 和 decode。
+
+prefill阶段主要负责计算原始输入的q,k,v，进而得到第一个token
+
+decode阶段。通过prefill阶段得到的第一个token拼接到原来的输入上，并以此作为新的输入，在进行q,k,v的计算，得到下一个token
+
+在上面的过程中，其中每次进行一次decode,而在每一次的decode中都会得到一个新的q向量和,还有一部分新的k向量和v向量。但最后的输出结果新增的分量仅用新增的q向量，还有全部的k和v,因此为了避免重新计算k,v,可以对kv进行cache,而对于q却不用cache前面的历史，因为最后的输出只需要当前decode的q分量，见下图
+
+![kv cache](../assets/kv%20cache.png)
+
 
 #### GQA （分组查询注意力机制）
 [MHA, MQA, GQA](https://mp.weixin.qq.com/s/_4OxoRLxhOcjGf0Q4Tvp2Q)
