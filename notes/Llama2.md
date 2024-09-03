@@ -26,8 +26,11 @@ Transformer的Normalization层使用的是LayerNormlization层归一化对Tensor
 $$RMSNorm(x) = \frac{x}{\sqrt{\frac{1}{N} \sum_{i=1}^{N}x_i^2 - \epsilon}}$$
 
 #### RoPE旋转位置编码
+[RoFormer 原论文](https://arxiv.org/pdf/2104.09864)
 
-<https://zhuanlan.zhihu.com/p/642884818>
+[作者博客](https://spaces.ac.cn/archives/8265/comment-page-1)
+
+[知乎博客](https://zhuanlan.zhihu.com/p/642884818)
 
 - 旋转位置编码，使在计算attention的时候，也够考虑相对位置信息
 - 增强模型的外推性，可以使得推理时输入的长度可以大于训练时的长度
@@ -42,7 +45,7 @@ prefill阶段主要负责计算原始输入的q,k,v，进而得到第一个token
 
 decode阶段。通过prefill阶段得到的第一个token拼接到原来的输入上，并以此作为新的输入，在进行q,k,v的计算，得到下一个token
 
-在上面的过程中，其中每次进行一次decode,而在每一次的decode中都会得到一个新的q向量和,还有一部分新的k向量和v向量。但最后的输出结果新增的分量仅用新增的q向量，还有全部的k和v,因此为了避免重新计算k,v,可以对kv进行cache,而对于q却不用cache前面的历史，因为最后的输出只需要当前decode的q分量，见下图
+在上面的过程中，其中每次进行一次decode,而在每一次的decode中都会得到一个新的q向量和,还有一部分新的k向量和v向量。但最后的输出结果新增的分量仅用到新增的q向量，还有全部的k和v,因此为了避免重新计算k,v,可以对kv进行cache,而对于q却不用cache前面的历史，因为最后的输出只需要当前decode的q分量，见下图
 
 ![kv cache](../assets/kv%20cache.png)
 
@@ -56,4 +59,4 @@ decode阶段。通过prefill阶段得到的第一个token拼接到原来的输�
 
 Transformer中采用的是多头注意力，将计算出的q,k,v分成num_heads份，将输入也分成num_heads份，分别交给不同的attention模块计算，然后将不同attention模块计算出来的o给 concat 起来，最后做一个output linear得到和输入形状一样的输出
 
-Llama2采用的是GQA,即同一个组的attention共享k,v,计算上和形式上MHA区别不大，但减少了W_k,W_v还有q,v的参数
+Llama2采用的是GQA,将若干个注意力头分为一组，同一个组内的attention共享k,v,计算上和形式上MHA区别不大，但减少了W_k,W_v还有q,v的参数,同时会带来一定损失，一个 trade off 的问题

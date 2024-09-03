@@ -243,21 +243,8 @@ LSTM和RNN的输入的区别如下图
 
 - [llama-factory](https://github.com/hiyouga/LLaMA-Factory)
 
-Llama 2的模型结构与标准的Transformer Decoder结构基本一致，主要由32个 Transformer Block 组成，不同之处主要包括以下几点：
-
-1. 前置的**RMSNorm**层
-2. Q在与K相乘之前，先使用**RoPE**进行位置编码
-3. **K V Cache**，并采用**Group Query Attention（GQA)**
-4. FeedForward层
-
-**RoPE旋转位置编码**
-
-- <https://zhuanlan.zhihu.com/p/642884818>
-- <https://zhuanlan.zhihu.com/p/647109286>
-
-**GQA分组注意力查询机制**
-
-- [MHA, MQA, GQA](https://mp.weixin.qq.com/s/_4OxoRLxhOcjGf0Q4Tvp2Q)
+笔记:
+- [llamma notest](./notes/Llama2.md)
 
 ## 大模型训练
 
