@@ -310,10 +310,13 @@
         <mxCell id="rr1X3Q6AXbM-6dndpf1p-1" value="" style="shape=orEllipse;perimeter=ellipsePerimeter;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
           <mxGeometry x="980" y="505" width="20" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="rr1X3Q6AXbM-6dndpf1p-2" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=#d6b656;overflow=hidden;fillColor=#FFD966;top=0;left=0;bottom=0;right=0;pointerEvents=1;gradientColor=#FF6666;" vertex="1" parent="1">
+        <mxCell id="rr1X3Q6AXbM-6dndpf1p-2" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=#d6b656;overflow=hidden;fillColor=#FFD966;top=0;left=0;bottom=0;right=0;pointerEvents=1;gradientColor=#FF6666;gradientDirection=south;" vertex="1" parent="1">
           <mxGeometry x="980" y="535" width="100" height="35" as="geometry">
             <mxRectangle width="100" height="35" as="alternateBounds" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="rr1X3Q6AXbM-6dndpf1p-3" value="seq_len * dim_h2" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="870" y="510" width="110" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
