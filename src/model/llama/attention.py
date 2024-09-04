@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-
+import config
 # Transformer Standard Attention with kv cache
 class Transformer_Attention(nn.Module):
     def __init__(self, dim_embeding:int,dim_qk:int,dim_v:int,kv_cache:bool=True):
@@ -17,8 +17,8 @@ class Transformer_Attention(nn.Module):
         
         self.kv_cache=kv_cache
         if kv_cache:
-            self.kv_cache_k = torch.zeros((1, 1, dim_qk))
-            self.kv_cache_v = torch.zeros((1, 1, dim_v))
+            self.kv_cache_k = torch.zeros((config.max_batch_size, config.max_seq_len, dim_qk))
+            self.kv_cache_v = torch.zeros((config.max_batch_size,config.max_seq_len, dim_v))
         
         self.output = nn.Linear(dim_v,dim_embeding,bias=False)
         
