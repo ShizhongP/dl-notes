@@ -9,7 +9,7 @@
 <img src="https://pic4.zhimg.com/80/v2-c9b10194c5e0aa9777afa984063e7ff3_720w.webp" alt="img" style="zoom: 67%;" />
 
 Llama 2的模型结构与标准的Transformer Decoder结构基本一致，主要由32个 Transformer Block 组成
-每一个 Transformer Block 主要包括一个Atttion 和 FeedForwad 
+每一个 Transformer Block 主要包括一个Attention 和 FeedForwad 
 ```python
 class TransformerBlock(nn.Module):
     def __init__(self,):
