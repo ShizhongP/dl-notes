@@ -68,8 +68,7 @@ OSI 5层，TCP可靠传输，VPN, port , socket...
 ## Python 基础
 
 ### 基本语法和概念
-
-参考博客：<https://www.liujiangblog.com/course/python/78>
+[easy-py](https://github.com/FZU-psz/easy-py)
 
 ### 基础的第三方库
 
