@@ -46,11 +46,12 @@ $$RMSNorm(x) = \frac{x}{\sqrt{\frac{1}{N} \sum_{i=1}^{N}x_i^2 - \epsilon}} \gamm
 - 旋转位置编码，使在计算attention的时候，也够考虑相对位置信息
 - 增强模型的外推性，可以使得推理时输入的长度可以大于训练时的长度
 
+Transformer中，我们在输入时，会经过一层position embedding 对每一个token进行位置编码
+
+Llama中舍弃了位置编码，而是在每一次attention中，对q,k,进行旋转位置编码，这样能同时考虑在同一个序列中，两个token之间的相对位置信息
 #### KV cache
 
-[kv cache](https://zhuanlan.zhihu.com/p/630832593)
-
-[https://blog.csdn.net/ningyanggege/article/details/134564203]
+[为什么需要kv cache](https://blog.csdn.net/ningyanggege/article/details/134564203)
 
 通常在推理阶段，可以分为两个阶段，prefill 和 decode。
 
