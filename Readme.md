@@ -3,7 +3,9 @@
 [csapp 计算机基础课](https://hansimov.gitbook.io/csapp)
 
 ## Python 基础
+
 [easy-py 编程入门书](https://github.com/FZU-psz/easy-py)
+正在更新下一部分的内容，去了解python更深的内容
 
 ## 计算机网络
 
@@ -57,7 +59,7 @@ KNN,Kmeans,PCA,SVM,Logistic regression，梯度下降法
 
 - <https://github.com/SivilTaram/Graph-Neural-Network-Note>
 
-GNN 就是做了这么一件事情：**利用图的节点信息去生成节点（图）的 Embedding 表示**。就是那么一个 Embedding 的方法。
+GNN 思想：**利用图的节点信息去生成节点（图）的 Embedding 表示**。
 
 ## 循环神经网络RNN
 
@@ -86,6 +88,10 @@ GNN 就是做了这么一件事情：**利用图的节点信息去生成节点�
 
 - [llama note 笔记](./notes/Llama2.md)
 
+## Deep Seek
+
+waitting to update
+
 ## 大模型训练
 
 参考博客：
@@ -93,13 +99,6 @@ GNN 就是做了这么一件事情：**利用图的节点信息去生成节点�
 - <https://zhuanlan.zhihu.com/p/688873027>
 
 ### 传统并行手段
-
-**了解下torch的通信原语**
-
-- [知乎教程](https://zhuanlan.zhihu.com/p/478953028)
-- [pytorch文档教程](https://pytorch.org/tutorials/intermediate/dist_tuto.html#distributed-training)
-
-根据教程完成p2p通信和collective communication
 
 #### 数据并行
 
@@ -151,7 +150,7 @@ GNN 就是做了这么一件事情：**利用图的节点信息去生成节点�
 
 - [Light-llm](https://github.com/ModelTC/lightllm)
 
-- [TensorRT](https://github.com/NVIDIA/TensorRT-LLM)
+- [TensorRT 半开源](https://github.com/NVIDIA/TensorRT-LLM)
 
 - [SGLang](https://github.com/sgl-project/sglang)
 
@@ -161,6 +160,10 @@ GNN 就是做了这么一件事情：**利用图的节点信息去生成节点�
 
 - 全参数微调: 将预训练模型作为初始化权重，对全部参数都进行更新
 - 高效参数微调: 通常指对部分参数进行更新
+
+### Prefix-tuning
+
+waitting to update
 
 ### Lora
 
@@ -174,29 +177,39 @@ GNN 就是做了这么一件事情：**利用图的节点信息去生成节点�
 
 ### GPTQ
 
-论文：<https://arxiv.org/abs/2210.17323>
+论文：[GPTQ](https://arxiv.org/abs/2210.17323)
 
-代码仓库: <https://github.com/IST-DASLab/gptq>
-
-[AutoGPTQ](https://github.com/AutoGPTQ/AutoGPTQ),这个仓库集成了更多功能，支持很多模型
+算法实现:[AutoGPTQ](https://github.com/AutoGPTQ/AutoGPTQ)
 
 ### AWQ
 
-原理大致了解即可
+论文: [AWQ](https://arxiv.org/abs/2306.00978)
 
-论文:<https://arxiv.org/abs/2306.00978>
-
-代码仓库:<https://github.com/mit-han-lab/llm-awq>
+算法实现:[llm-awq](https://github.com/mit-han-lab/llm-awq)
 
 ## 上下文缓存技术
 
-如何解决 kv cache过长的问题!
+- kv cache过长
+- Prefill 阶段计算密集
+- Decode 访存密集
 
-<https://arxiv.org/abs/2406.17565>
+[大模型推理仓库合集](https://github.com/DefTruth/Awesome-LLM-Inference?tab=readme-ov-file)
+
+## RAG(Retrieval-Augmented Generations)
+
+RAG综述：[Retrieval-Augmented Generations for Large Language Model: A Survey](https://arxiv.org/abs/2312.10997)
+
+代码仓库
+
+1. [LangChain](https://python.langchain.com/v0.1/docs/get_started/quickstart/)
+2. [LlamaIndex](https://pypi.org/project/llama-index/)
+
+## 多模态
+
+waiting to update
 
 ## 阅读推荐
 
-[自动微分](https://liebing.org.cn/automatic-differentiation.html#Reference)
 [深入理解pytorch机制](https://www.cnblogs.com/rossiXYZ/p/15518457.html)
 
 [llm-action 大模型实战和技术路线](https://github.com/liguodongiot/llm-action?tab=readme-ov-file)
