@@ -41,9 +41,9 @@ KNN,Kmeans,PCA,SVM,Logistic regression，梯度下降法
 
 ## 深度学习
 
-- [PyTorch深度学习快速入门教程](https://www.bilibili.com/video/BV1hE411t7RN/?spm_id_from=333.337.search-card.all.click&vd_source=ec674d7bf8a6cdd072b8017efe791d9f) b站小土堆
+- [PyTorch入门-小土堆](https://www.bilibili.com/video/BV1hE411t7RN/?spm_id_from=333.337.search-card.all.click&vd_source=ec674d7bf8a6cdd072b8017efe791d9f)
 
-- [跟李沐学AI](https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497) b站李沐
+- [跟李沐学AI](https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497)
 
 - [《动手学深度学习》 — 动手学深度学习 2.0.0 documentation (d2l.ai)](https://zh.d2l.ai/)
 
@@ -90,7 +90,9 @@ GNN 思想：**利用图的节点信息去生成节点（图）的 Embedding 表
 
 ## Deep Seek
 
-waitting to update
+Moe的结构
+
+- [苏剑林讲MLA](https://kexue.fm/archives/10091)
 
 ## 大模型训练
 
@@ -108,13 +110,7 @@ waitting to update
 
 - [原理简单解读和DDP详细使用教程](https://github.com/KaiiZhang/DDP-Tutorial/blob/main/DDP-Tutorial.md)
 
-**torch.nn.DP(Data Parallel)**
 
-- DP是单进程多线程的形式,torch源码，受python的GIL的限制，至于什么是GIL,回顾python的基础知识
-
-**DDP(Data Distributed Parallel)**
-
-- 多进程的形式，一般一张显卡对应一个进程,通过多进程，绕过了GIL,性能较多线程可能更好
 
 #### 流水线并行
 
@@ -206,7 +202,21 @@ RAG综述：[Retrieval-Augmented Generations for Large Language Model: A Survey]
 
 ## 多模态
 
-waiting to update
+多模态大模型综述:[A survey on Multimodal Large Language Models](https://arxiv.org/abs/2306.13549)
+
+现有的多模态大模型的基本架构
+
+1. 其他模态的数据的编码(图像，音频等)
+2. 不同不模态之间的数据的适配器，或者叫connector
+3. 基础的LLM,是直接采用还是微调对齐之后，或者从零开始训练
+
+可以继续探究的点
+
+1. 长文本和多模态融合
+2. 继续挖掘多模态大模型的的能力，多模态的ICL,Cot
+3. 具身智能，比较交叉了
+4. 多模态生成的安全问题,主要还是对齐
+5. 多模态大模型的更多的模态的对话能力
 
 ## 阅读推荐
 
