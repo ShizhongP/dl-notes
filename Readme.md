@@ -93,6 +93,7 @@ GNN 思想：**利用图的节点信息去生成节点（图）的 Embedding 表
 Moe的结构
 
 - [苏剑林讲MLA](https://kexue.fm/archives/10091)
+- [deepseek-v2 笔记](./notes/DeepSeek-V2.md)
 
 ## 大模型训练
 
@@ -109,8 +110,6 @@ Moe的结构
 - [DP与DDP原理解读](https://blog.csdn.net/ytusdc/article/details/122091284)
 
 - [原理简单解读和DDP详细使用教程](https://github.com/KaiiZhang/DDP-Tutorial/blob/main/DDP-Tutorial.md)
-
-
 
 #### 流水线并行
 
