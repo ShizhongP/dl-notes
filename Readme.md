@@ -97,41 +97,23 @@ Moe的结构
 
 ## 大模型训练
 
-参考博客：
+### 三大并行手段
 
-- <https://zhuanlan.zhihu.com/p/688873027>
-
-### 传统并行手段
-
-#### 数据并行
-
-参考:
-
-- [DP与DDP原理解读](https://blog.csdn.net/ytusdc/article/details/122091284)
-
-- [原理简单解读和DDP详细使用教程](https://github.com/KaiiZhang/DDP-Tutorial/blob/main/DDP-Tutorial.md)
-
-#### 流水线并行
-
-视频讲解:<https://www.bilibili.com/video/BV1v34y1E7zu/?spm_id_from=333.999.0.0>
-
-#### 张量并行
-
-在llama的note讲解过了
+[数据并行，张量并行，流水线并行](./notes/三大并行手段.md)
 
 ### Megatron-LM
 
-参考博客:<https://zhuanlan.zhihu.com/p/366906920>
+- 参考博客:[知乎博客源码讲解](https://zhuanlan.zhihu.com/p/366906920)
 
-视频讲解：<https://www.bilibili.com/video/BV1nB4y1R7Yz/?spm_id_from=333.999.0.0>
+- 视频讲解：[Megatron-LM讲解-李沐](https://www.bilibili.com/video/BV1nB4y1R7Yz/?spm_id_from=333.999.0.0)
 
 ### Deepspeed
 
-区别于其他框架的最大特点是Zero
+- 参考博客 [deespeed 讲解](https://zhuanlan.zhihu.com/p/513571706)
 
-文档:<https://www.deepspeed.ai/getting-started/>
+- 文档: [deepspeed.ai](https://www.deepspeed.ai/getting-started/)
 
-视频讲解：<https://www.bilibili.com/video/BV1tY411g7ZT/?spm_id_from=333.999.0.0>
+- 视频讲解：[deepspeed zero 讲解-李沐](https://www.bilibili.com/video/BV1tY411g7ZT/?spm_id_from=333.999.0.0)
 
 ### Flashattention
 
