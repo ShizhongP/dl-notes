@@ -5,7 +5,8 @@
 ## Python 基础
 
 [easy-py 编程入门书](https://github.com/FZU-psz/easy-py)
-正在更新下一部分的内容，去了解python更深的内容
+
+正在更新下一部分的内容，基本的深度学习知识和框架
 
 ## 计算机网络
 
@@ -37,7 +38,7 @@ OSI 5层，TCP可靠传输，VPN, port , socket...
 
 ## 传统机器学习
 
-KNN,Kmeans,PCA,SVM,Logistic regression，梯度下降法
+KNN,Kmeans,PCA,SVM,Logistic regression，梯度下降法, [beam search](https://zhuanlan.zhihu.com/p/82829880)
 
 ## 深度学习
 
@@ -117,7 +118,7 @@ Moe的结构
 
 ### Flashattention
 
-理解原理！现在很多算法已经集成了Flashattention了，大部分不需要自己实现。
+Flashattention 现在已经算是必不可少的算子了，基本上主流框架都实现了
 
 ## 大模型推理部署
 
@@ -144,11 +145,11 @@ waitting to update
 
 ### Lora
 
-[lora note](./notes/Lora.md)
+[Lora note](./notes/Lora.md)
 
 ### QLoRA
 
-区别于LoRA,是在训练时进行量化,原理也是可以大致了解
+区别于LoRA,是在预训练时进行量化,大致了解
 
 ## 量化技术
 
@@ -172,7 +173,7 @@ waitting to update
 
 [大模型推理仓库合集](https://github.com/DefTruth/Awesome-LLM-Inference?tab=readme-ov-file)
 
-## RAG(Retrieval-Augmented Generations)
+## RAG(Retrieval-Augmented Generation)
 
 RAG综述：[Retrieval-Augmented Generations for Large Language Model: A Survey](https://arxiv.org/abs/2312.10997)
 
@@ -183,7 +184,7 @@ RAG综述：[Retrieval-Augmented Generations for Large Language Model: A Survey]
 
 ## 多模态
 
-多模态大模型综述:[A survey on Multimodal Large Language Models](https://arxiv.org/abs/2306.13549)
+多模态大模型综述: [A survey on Multimodal Large Language Models](https://arxiv.org/abs/2306.13549)
 
 现有的多模态大模型的基本架构
 

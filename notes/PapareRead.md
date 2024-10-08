@@ -33,7 +33,7 @@ RAG提出的目的，解决以下问题
 
 # 模型轻量化
 
-## Light-PEFT
+## ACL2024: Light-PEFT
 
 ### motivation
 
@@ -62,6 +62,47 @@ Lig-PEFT提出的在训练早期评估可学习模块的大小，使得最终需
 
 个人认为，损失是还有一点点大
 
-### Pruning LargeLanguage Models to Intra-module Low-rank Architecture with Transitional Activations
+## Pruning LargeLanguage Models to Intra-module Low-rank Architecture with Transitional Activations
 
 waitting to update
+
+# 幻觉
+
+## Insight into LLM Long-context Failures: When Transformers know but don't tell
+
+### motivation && background
+
+1. 大模型不能完全利用长文本输入的全部信息
+2. 通常只关注头部和尾部的信息
+3. 长输入的中间部分被忽略
+4. 现有方法尝试解决这些偏差
+
+### Abstract
+
+本文尝试从模型的中间激活值来评定长文本不同部位的信息在 模型的各个层中的损失，从而论证大模型对长文本的输入是有感知，但是输出却损失了信息
+
+### conclusion
+
+1. 中间的输入需要更多层才能感知到
+2. 越前面的输入对应的精度越高
+
+## CVPR2024: OPERA: Allevaiting Hallucination in Muti-Modal Large Language Models via Over-Trust Penalty and Retrospection-Allocation
+
+### background
+
+1. 现有减轻大模型幻觉的方法是通过额外训练或者引入外部数据
+2. 幻觉产生的原因：注意力权重。eg. 多模态的模型聚焦于总结性的token, 而忽略了image token ，导致输出出现幻觉
+
+### Abstract
+
+本文提出一种无需额外训练或者引入外部知识为代价，仅在在解码过程中解决幻觉的方法。主要是基于beam serach的方法，每次对候选token的概率分数施加惩罚项，并在一定窗口大小内判断是否需要回溯到summary token重新选择candiate。
+
+### Conclusion
+
+1. OPERA 不需要任何额外的训练和外部数据开销
+2. 在四个多模态模型上表现不俗
+
+### defect
+
+1. OPERA 在短的回答上效果比较弱，在长回答中能发挥比较好的效果
+2. OPERA 并不能解决所有幻觉现象，这取决于模型本身的能力
