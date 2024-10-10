@@ -83,6 +83,12 @@ GNN 思想：**利用图的节点信息去生成节点（图）的 Embedding 表
 **源码实现**
 [Transformer src](https://github.com/FZU-psz/dl-notes/tree/main/src/model/transformer)
 
+## Bert
+
+- [Bert 讲解](https://zhuanlan.zhihu.com/p/103226488)
+
+- [bert 笔记]()
+
 ## Llama2
 
 - [知乎llama2结构详解](https://zhuanlan.zhihu.com/p/649756898)

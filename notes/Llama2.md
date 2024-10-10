@@ -9,7 +9,8 @@
 <img src="https://pic4.zhimg.com/80/v2-c9b10194c5e0aa9777afa984063e7ff3_720w.webp" alt="img" style="zoom: 67%;" />
 
 Llama 2的模型结构与标准的Transformer Decoder结构基本一致，主要由32个 Transformer Block 组成
-每一个 Transformer Block 主要包括一个Attention 和 FeedForwad 
+每一个 Transformer Block 主要包括一个Attention 和 FeedForwad
+
 ```python
 class TransformerBlock(nn.Module):
     def __init__(self,):
@@ -18,7 +19,9 @@ class TransformerBlock(nn.Module):
     def forward(x):
         ...
 ```
+
 与标准的Transfomer bolck的不同之处主要包括以下几点：
+
 1. 前置的**RMSNorm**层
 2. Q在与K相乘之前，先使用**RoPE**进行位置编码
 3. **K V Cache**，并采用**Group Query Attention**
@@ -35,6 +38,7 @@ RMSNorm是LayerNormlization的变体，它省去了求均值的过程，也没�
 $$RMSNorm(x) = \frac{x}{\sqrt{\frac{1}{N} \sum_{i=1}^{N}x_i^2 - \epsilon}} \gamma$$
 
 其中 $\gamma$ 是可以学习的参数, $\epsilon$ 是给定的校准值
+
 #### RoPE旋转位置编码
 
 [RoFormer 原论文](https://arxiv.org/pdf/2104.09864)
@@ -49,6 +53,7 @@ $$RMSNorm(x) = \frac{x}{\sqrt{\frac{1}{N} \sum_{i=1}^{N}x_i^2 - \epsilon}} \gamm
 Transformer中，我们在输入时，会经过一层position embedding 对每一个token进行位置编码
 
 Llama中舍弃了位置编码，而是在每一次attention中，对q,k,进行旋转位置编码，这样能同时考虑在同一个序列中，两个token之间的相对位置信息
+
 #### KV cache
 
 [为什么需要kv cache](https://blog.csdn.net/ningyanggege/article/details/134564203)
@@ -76,6 +81,7 @@ Transformer中采用的是多头注意力，将计算出的q,k,v分成num_heads�
 Llama2采用的是GQA,将若干个注意力头分为一组，同一个组内的attention共享k,v,计算上和形式上MHA区别不大，但减少了W_k,W_v还有q,v的参数,同时会带来一定损失，一个 trade off 的问题
 
 #### 张量并行
+
 llama2 的源码当中也采用了张量并行的做法，
 
 对于ColumnParallel 的切割方式，需要完整的输入，最后将结果concat起来
