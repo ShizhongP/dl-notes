@@ -87,7 +87,7 @@ GNN 思想：**利用图的节点信息去生成节点（图）的 Embedding 表
 
 - [Bert 讲解](https://zhuanlan.zhihu.com/p/103226488)
 
-- [bert 笔记]()
+- [bert 笔记](./notes/Bert.md)
 
 ## Llama2
 
@@ -116,7 +116,7 @@ Moe的结构
 
 ### Deepspeed
 
-- 参考博客 [deespeed 讲解](https://zhuanlan.zhihu.com/p/513571706)
+- 参考博客 [deespeed 讲解](https://zhuanlan.zhihu.com/p/513571706),[deepspeed 讲解](https://blog.csdn.net/v_JULY_v/article/details/132462452)
 
 - 文档: [deepspeed.ai](https://www.deepspeed.ai/getting-started/)
 
@@ -155,7 +155,7 @@ waitting to update
 
 ### QLoRA
 
-区别于LoRA,是在预训练时进行量化,大致了解
+区别于LoRA,是在训练时进行量化,大致了解
 
 ## 量化技术
 
@@ -191,6 +191,11 @@ RAG综述：[Retrieval-Augmented Generations for Large Language Model: A Survey]
 ## 多模态
 
 多模态大模型综述: [A survey on Multimodal Large Language Models](https://arxiv.org/abs/2306.13549)
+
+- [Clip]()
+- [Blip]()
+- [Flamingo]()
+- [LlaVa]()
 
 现有的多模态大模型的基本架构
 
