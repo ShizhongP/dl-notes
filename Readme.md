@@ -192,10 +192,10 @@ RAG综述：[Retrieval-Augmented Generations for Large Language Model: A Survey]
 
 多模态大模型综述: [A survey on Multimodal Large Language Models](https://arxiv.org/abs/2306.13549)
 
-- [Clip]()
-- [Blip]()
-- [Flamingo]()
-- [LlaVa]()
+- [Clip](https://zhuanlan.zhihu.com/p/521151393)
+- [Blip](https://zhuanlan.zhihu.com/p/640887802)
+- [Flamingo](https://blog.csdn.net/LoseInVain/article/details/136072993)
+- [LlaVa](https://blog.csdn.net/qq_58400270/article/details/135073408)
 
 现有的多模态大模型的基本架构
 
