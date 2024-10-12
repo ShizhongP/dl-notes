@@ -147,7 +147,7 @@ Flashattention 现在已经算是必不可少的算子了，基本上主流框�
 
 ### Prefix-tuning
 
-waitting to update
+[Prefix-tuning note](./notes/PrefixTuning.md)
 
 ### Lora
 
