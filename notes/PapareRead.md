@@ -33,6 +33,23 @@ RAG提出的目的，解决以下问题
     - 图像，音频，代码等
 3. 继续提高RAG的健壮性，提升准确性和相关性
 
+## ACL2024: PreFLMR: Scaling up Fine-Grained Late-interaction Multi-modal Retrievers
+
+### motivation && background
+
+1. 现有的大模型对多模态的文本问答的效果很差
+2. 缺少对于多模态检索器的 scaling up 的研究
+
+### Points
+
+1. 整合9个不同任务类型的数据集，M2KR
+2. 在FLMR基础上，在不同阶段的训练训练检索器的组件
+3. 使用不同参数的组件训练和测试,探究不同组件的参数量对结果的影响
+
+###
+
+1. 增加视觉编码的大小性能有提升
+
 # 模型轻量化
 
 ## ACL2024: Light-PEFT

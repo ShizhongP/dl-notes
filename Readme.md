@@ -60,7 +60,7 @@ KNN,Kmeans,PCA,SVM,Logistic regression，梯度下降法, [beam search](https://
 
 - <https://github.com/SivilTaram/Graph-Neural-Network-Note>
 
-GNN 思想：**利用图的节点信息去生成节点（图）的 Embedding 表示**。
+GNN 思想：利用图的节点信息去生成节点（图）的 Embedding 表示。
 
 ## 循环神经网络RNN
 
@@ -68,7 +68,7 @@ GNN 思想：**利用图的节点信息去生成节点（图）的 Embedding 表
 
 ## Transformer
 
-**参考博客**
+reference:
 
 - [The Illustrated Transformer – Jay Alammar](https://jalammar.github.io/illustrated-transformer/)
 - [Transformer模型详解](https://zhuanlan.zhihu.com/p/338817680)
@@ -77,10 +77,9 @@ GNN 思想：**利用图的节点信息去生成节点（图）的 Embedding 表
 - [张俊林讲解attention](https://zhuanlan.zhihu.com/p/37601161)
 - [kv cache](https://zhuanlan.zhihu.com/p/630832593)
 - [为什么用kv cache 不 cache q?](https://www.zhihu.com/question/653658936/answer/3545520807)
+- [B站视频讲解:王木头学科学](https://www.bilibili.com/video/BV1XH4y1T76e/?spm_id_from=333.999.0.0&vd_source=ec674d7bf8a6cdd072b8017efe791d9f)
 
-- [B站视频讲解:王木头学科学]()
-
-**源码实现**
+source code:
 [Transformer src](https://github.com/FZU-psz/dl-notes/tree/main/src/model/transformer)
 
 ## Bert
@@ -91,13 +90,11 @@ GNN 思想：**利用图的节点信息去生成节点（图）的 Embedding 表
 
 ## Llama2
 
-- [知乎llama2结构详解](https://zhuanlan.zhihu.com/p/649756898)
+- [llama2结构详解](https://zhuanlan.zhihu.com/p/649756898)
 
-- [llama note 笔记](./notes/Llama2.md)
+- [llama 笔记](./notes/Llama2.md)
 
 ## Deep Seek
-
-Moe的结构
 
 - [苏剑林讲MLA](https://kexue.fm/archives/10091)
 - [deepseek-v2 笔记](./notes/DeepSeek-V2.md)
@@ -196,20 +193,6 @@ RAG综述：[Retrieval-Augmented Generations for Large Language Model: A Survey]
 - [Blip](https://zhuanlan.zhihu.com/p/640887802)
 - [Flamingo](https://blog.csdn.net/LoseInVain/article/details/136072993)
 - [LlaVa](https://blog.csdn.net/qq_58400270/article/details/135073408)
-
-现有的多模态大模型的基本架构
-
-1. 其他模态的数据的编码(图像，音频等)
-2. 不同不模态之间的数据的适配器，或者叫connector
-3. 基础的LLM,是直接采用还是微调对齐之后，或者从零开始训练
-
-可以继续探究的点
-
-1. 长文本和多模态融合
-2. 继续挖掘多模态大模型的的能力，多模态的ICL,Cot
-3. 具身智能，比较交叉了
-4. 多模态生成的安全问题,主要还是对齐
-5. 多模态大模型的更多的模态的对话能力
 
 ## 阅读推荐
 
