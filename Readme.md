@@ -76,7 +76,6 @@ reference:
 - [注意力机制综述](https://zhuanlan.zhihu.com/p/631398525)
 - [张俊林讲解attention](https://zhuanlan.zhihu.com/p/37601161)
 - [kv cache](https://zhuanlan.zhihu.com/p/630832593)
-- [为什么用kv cache 不 cache q?](https://www.zhihu.com/question/653658936/answer/3545520807)
 - [B站视频讲解:王木头学科学](https://www.bilibili.com/video/BV1XH4y1T76e/?spm_id_from=333.999.0.0&vd_source=ec674d7bf8a6cdd072b8017efe791d9f)
 
 source code:
@@ -189,6 +188,7 @@ RAG综述：[Retrieval-Augmented Generations for Large Language Model: A Survey]
 
 多模态大模型综述: [A survey on Multimodal Large Language Models](https://arxiv.org/abs/2306.13549)
 
+- [ViT](https://blog.csdn.net/lsb2002/article/details/135320751)
 - [Clip](https://zhuanlan.zhihu.com/p/521151393)
 - [Blip](https://zhuanlan.zhihu.com/p/640887802)
 - [Flamingo](https://blog.csdn.net/LoseInVain/article/details/136072993)
