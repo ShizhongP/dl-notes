@@ -113,6 +113,20 @@ waitting to update
 
 # 幻觉
 
+## 2023.11: Woodpecker: Hallucination Correction for Multimodal Large Language Models
+
+### motivation && background
+
+1. 多模态大模型的幻觉问题，此前的研究都在做insturction fine-tuning 都需要通过训练的方式
+2. 之前的研究聚焦于事实性的错误
+
+### Points
+
+1. 提出一个无需训练的框架 Woodpecker, 通过5个步骤，最后产生答案
+2. 聚焦于视觉的幻觉，而不是事实性的错误
+3. 每一步骤都使用特定的模板或者特定的模型来生成
+4. 在主流大模型的测试上都有较多提升
+
 ## Insight into LLM Long-context Failures: When Transformers know but don't tell
 
 ### motivation && background
