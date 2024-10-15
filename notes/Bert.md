@@ -15,9 +15,10 @@ reference: [bert](https://zhuanlan.zhihu.com/p/103226488)
 2. Segmet embedding: 为了区别输入的两个句子，对不同句子的token的位置上分别编码0和1
 3. Position embedding: 不同于transformer,bert的位置编码的embedding 是可以学习的参数。原因：bert的数据量足够大，能够学习到位置信息。缺陷：不能超过训练的位置编码的长度,如训练时是512,输入不能超过512
 
-
 #### 预训练的损失函数
+
 交叉熵，本质上都是分类任务
+
 #### cls 的作用
 
 cls 这个无明显语义特征的信息能更加公平的融合文本中的各个token的信息

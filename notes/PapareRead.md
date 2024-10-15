@@ -107,7 +107,7 @@ Lig-PEFT提出的在训练早期评估可学习模块的大小，使得最终需
 
 个人认为，损失是还有一点点大
 
-## Pruning LargeLanguage Models to Intra-module Low-rank Architecture with Transitional Activations
+## ACL2024: Pruning LargeLanguage Models to Intra-module Low-rank Architecture with Transitional Activations
 
 waitting to update
 
