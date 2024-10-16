@@ -166,6 +166,24 @@ waitting to update
 1. OPERA 在短的回答上效果比较弱，在长回答中能发挥比较好的效果,可以通过调整参数和提升算法敏感度来解决。（可以做的比较少了）
 2. OPERA 并不能解决所有幻觉现象，这取决于模型本身的能力，这是训练和数据要解决的问题
 
+## ICLR2024: Mitigating Hallucination in Large Multi-Modal Models via Instruction Tuning
+
+cite:115
+
+### motivation && background
+
+1. 大模型对于需要问答no的问题不敏感
+
+### Points
+
+1. 构造了而一个数据集，里面包含了正样本和负样本,用的是纯文本的输入而合成的数据(这也行?!)
+2. GPT4自动打分，两个维度，一个相关性，一个是准确度
+3. 在数据集上做训练，得到的模型为sota
+
+### 我的感想
+
+这篇文章能中，原因感觉是实验非常充分，包括使用gpt4打分这一论文都进行了实验，可能也填补了这一数据集的空白，但是本身并没有太大的特色。
+
 # 多模态
 
 ## ACL2024: Mutilmodal Table Understanding
