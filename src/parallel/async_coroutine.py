@@ -1,26 +1,56 @@
 import time
 import asyncio
+
+
 async def task():
     print("Task is started")
+
+    for i in range(0, 10):
+        await asyncio.sleep(0.5)
+        print(f"loop1: {i}")
     # 模拟耗时操作 比如读取磁盘的数据
-    await asyncio.sleep(1)
     return "Task is done"
-    
+
+
 async def task2():
     print("Task2 is started")
-    await asyncio.sleep(1)
+    for i in range(0, 10):
+        await asyncio.sleep(0.5)
+        print(f"loop2: {i}")
     return "Task2 is done"
 
-if __name__ == "__main__":
-    # 创建事件循环
-    loop = asyncio.get_event_loop()
-    # 创建任务,封装到future中
-    tasks = [asyncio.ensure_future(task()), asyncio.ensure_future(task2())]
-    # 将任务加入事件循环
+
+async def main1():
+    res = await asyncio.gather(task(), task2(), task(), task2())
+    print(res)
+
+
+
+def main2():
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+    tasks = [
+        asyncio.ensure_future(task()),
+        asyncio.ensure_future(task2()),
+        asyncio.ensure_future(task()),
+        asyncio.ensure_future(task2()),
+    ]
+
     loop.run_until_complete(asyncio.wait(tasks))
-    
-    #获取时间的结果
-    for t in tasks:
-        print(t.result())
-    # 关闭事件循环
-    loop.close()
+
+    res = [t.result() for t in tasks]
+    print(res)
+
+
+if __name__ == "__main__":
+
+    start = time.time()
+    asyncio.run(main1())
+    end = time.time()
+    print("==================")
+    print(f"main1 takes: {end - start} seconds")
+    start = time.time()
+    main2()
+    end = time.time()
+    print("==================")
+    print(f"main2 takes: {end - start} seconds")
