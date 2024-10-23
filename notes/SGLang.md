@@ -1,5 +1,7 @@
+# SGLang
 
 几个指标
+
 1. TTFT(Time of the first token): 第一个token产生的时间
 2. TBT(Time between token): 上一个token产生到下一个token的时间
 
@@ -13,7 +15,6 @@ batch(to utilize full capability of machine), cache(to reuse), shcedule(to impro
 
 2. server
     - tokenization
-    - engine (mutiple gpu) 
+    - engine (mutiple gpu)
     - detokenization
 每个节点有一个contorller负责数据并行和调度
-

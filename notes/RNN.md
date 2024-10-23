@@ -1,4 +1,6 @@
-### RNN
+# RNN 和 LSTM
+
+## RNN
 
 参考博客：
 
@@ -18,7 +20,7 @@ RNN 中的单个神经元如下所示
 
 <img src="https://pic2.zhimg.com/80/v2-71652d6a1eee9def631c18ea5e3c7605_720w.webp" alt="img" style="zoom:50%;" />
 
-### LSTM
+## LSTM
 
 长短期记忆（Long short-term memory, LSTM）是一种特殊的RNN，主要是为了解决长序列训练过程中的梯度消失和梯度爆炸问题。简单来说，就是相比普通的RNN，LSTM能够在更长的序列中有更好的表现。
 
