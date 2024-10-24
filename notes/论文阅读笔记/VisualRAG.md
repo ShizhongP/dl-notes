@@ -49,12 +49,12 @@ VisRAG通过使用VLMs来促进RAG管道中的检索和生成，消除了传统�
 1. 对于多张图像的输入的处理仍然是个问题，主要是基座模型的架构的设计和训练
 2. 利用视觉RAG比起单纯的文本RAG效果更好
 
-### 相关论文
+## 相关论文
 
 - [Uniir](https://arxiv.org/abs/2311.17136)
 - [Unirag](https://arxiv.org/abs/2405.10311)
 - [MARVEL](https://arxiv.org/abs/2310.14037)
 
-- [Unifying multimodal R](https://arxiv.org/abs/2406.11251)
-
+- [Unifying Multimodal Retrieval via Document Screenshot Embedding](https://arxiv.org/abs/2406.11251)
+- [Unified Embedding for Multimodal Retrieval via Frozen LLM](https://aclanthology.org/2024.findings-eacl.105/)
 - [ColPali](https://arxiv.org/abs/2407.01449)
