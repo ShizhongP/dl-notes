@@ -72,13 +72,15 @@ decode阶段。通过prefill阶段得到的第一个token拼接到原来的输�
 
 [MHA, MQA, GQA](https://mp.weixin.qq.com/s/_4OxoRLxhOcjGf0Q4Tvp2Q)
 
-![GQA](../assets/MHA.png)
-
 标准Attention模块，需要计算q,k,v通过attention的计算，最后通过一个output linear即可得到和输入相同形状的输出
 
 Transformer中采用的是多头注意力，将计算出的q,k,v分成num_heads份，将输入也分成num_heads份，分别交给不同的attention模块计算，然后将不同attention模块计算出来的o给 concat 起来，最后做一个output linear得到和输入形状一样的输出
 
 Llama2采用的是GQA,将若干个注意力头分为一组，同一个组内的attention共享k,v,计算上和形式上MHA区别不大，但减少了W_k,W_v还有q,v的参数,同时会带来一定损失，一个 trade off 的问题
+
+![GQA](../assets/MHA.png)
+
+
 
 #### 张量并行
 
