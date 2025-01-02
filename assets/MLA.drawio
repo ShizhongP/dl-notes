@@ -126,6 +126,18 @@
         <mxCell id="DJ5MSKaRVRDGybE-odoW-114" value="" style="shape=sumEllipse;perimeter=ellipsePerimeter;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
           <mxGeometry x="1202" y="2112.5" width="9" height="10" as="geometry" />
         </mxCell>
+        <mxCell id="DJ5MSKaRVRDGybE-odoW-115" value="&lt;b&gt;MLA(Multi-Head Latent Attention)&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="999" y="1860" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DJ5MSKaRVRDGybE-odoW-116" value="这个示意只是单头的情况&lt;div&gt;&lt;div&gt;W_Ukr是所有Head共享的，只有一个，其他的权重矩阵在每个Head都有一份&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="2020" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DJ5MSKaRVRDGybE-odoW-117" value="&lt;b&gt;&lt;i&gt;Rope&lt;/i&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="997" y="2060" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DJ5MSKaRVRDGybE-odoW-118" value="&lt;b&gt;&lt;i&gt;Rope&lt;/i&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1202" y="2060" width="60" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
