@@ -39,7 +39,7 @@
         <mxCell id="rlrRLgWWHuGaL_X8YX_K-63" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;和教师模型同等参数大小的学生模型&lt;/b&gt;&lt;/font&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="232.62" y="1550" width="90.38" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rlrRLgWWHuGaL_X8YX_K-64" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;模型压缩&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="rlrRLgWWHuGaL_X8YX_K-64" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;模型增强&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="9.62" y="1280" width="210" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rlrRLgWWHuGaL_X8YX_K-65" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
