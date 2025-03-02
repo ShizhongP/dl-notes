@@ -164,7 +164,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="S0Tc-wyIkp8yYF_JRw8Z-6" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;迭代训练&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="S0Tc-wyIkp8yYF_JRw8Z-6" value="&lt;b&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;迭代训练&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="109.61999999999999" y="1820" width="120.76" height="30" as="geometry" />
         </mxCell>
         <mxCell id="S0Tc-wyIkp8yYF_JRw8Z-7" value="&lt;b&gt;&lt;span style=&quot;color: rgb(255, 0, 0);&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;训练的损失&lt;/font&gt;&lt;/span&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
