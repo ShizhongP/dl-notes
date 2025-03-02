@@ -95,21 +95,6 @@
         <mxCell id="UVcg1AAZaSUfiClmbuTc-44" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;&lt;font&gt;利用大模型的知识生成数据&lt;/font&gt;&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
           <mxGeometry x="-170" y="1300" width="580" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="UVcg1AAZaSUfiClmbuTc-48" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;" parent="1" vertex="1">
-          <mxGeometry x="470" y="1590" width="160" height="110" as="geometry" />
-        </mxCell>
-        <mxCell id="UVcg1AAZaSUfiClmbuTc-49" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyBoZWlnaHQ9IjE2Mi4wMDAwMDA0NzY4MzcxNiIgd2lkdGg9IjE0NS44MDAwMDYzODk2MTc5MiIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIxMzQuMTQzOTk3MTkyMzgyOCA3NC42NDk1OTcxNjc5Njg3NSA3NDYuNDk2MDMyNzE0ODQzOCA4MjkuNDQwMDAyNDQxNDA2MiIgY2xhc3M9Imljb24iPjxwYXRoIGZpbGw9IiMxMjZFRTMiIGQ9Ik02ODIuMjkxMiAzNDUuOTA3MmwxNjEuNzkyLTk5LjEyMzJoLTUuMjIyNEw1NTEuNzgyNCA4NS4wOTQ0Yy0xNS42NjcyLTUuMjIyNC0zMS4zMzQ0LTEwLjQ0NDgtNDcuMDAxNi0xMC40NDQ4LTE1LjY2NzIgMC0zMS4zMzQ0IDUuMjIyNC00Ny4wMDE2IDEwLjQ0NDhMMTgxLjE0NTYgMjQ2Ljc4NGwxNjEuNzkyIDk5LjEyMzJoMzM5LjM1MzZ6TTcxMy41NzQ0IDQyOS40MTQ0bC0xNjcuMDE0NCAyNjYuMDM1MnYyMDguNjRoNS4yMjI0bDI4MS44NTYtMTYxLjY4OTZjMjYuMTEyLTE1LjY2NzIgNDcuMDAxNi01Mi4yMjQgNDcuMDAxNi03OC4yODQ4VjMyNS4xMmwtMTY3LjA2NTYgMTA0LjM0NTZ6Ii8+PHBhdGggZmlsbC1vcGFjaXR5PSIuMjUiIGZpbGw9IiMxMjZFRTMiIGQ9Ik02MDkuMTc3NiA0MjkuNDE0NEg0MDUuNjA2NGw5OS4xNzQ0IDE3Mi4xMzQ0eiIvPjxwYXRoIGZpbGw9IiMxMjZFRTMiIGQ9Ik00NjMuMDAxNiA2OTUuNDQ5NmwtMTYxLjc5Mi0yNzYuNDhMMTM0LjE0NCAzMTQuNjI0djMzMy44MjRjMCAzMS4zMzQ0IDIwLjg4OTYgNjcuODQgNDcuMDAxNiA3OC4zMzZsMjgxLjg1NiAxNjEuNjg5Nmg1LjIyMjR2LTE5My4wMjRoLTUuMjIyNHoiLz48L3N2Zz4=;" parent="1" vertex="1">
-          <mxGeometry x="526.97" y="1650" width="36.05" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="UVcg1AAZaSUfiClmbuTc-50" value="&lt;b&gt;蒸馏后的参数更小的模型（例如：DeepSeek-R1-70B-distill)&lt;/b&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="472" y="1596.94" width="160" height="53.06" as="geometry" />
-        </mxCell>
-        <mxCell id="UVcg1AAZaSUfiClmbuTc-51" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=19.2;endSize=6.536;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="420" y="1639.6" as="sourcePoint" />
-            <mxPoint x="460" y="1639.6" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="UVcg1AAZaSUfiClmbuTc-52" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;用新的数据集合训练参数更小的模型&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
           <mxGeometry x="-170" y="1540" width="580" height="30" as="geometry" />
         </mxCell>
