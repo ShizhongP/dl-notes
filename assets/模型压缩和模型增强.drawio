@@ -18,7 +18,7 @@
             <mxPoint x="300" y="1575" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rlrRLgWWHuGaL_X8YX_K-60" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;数据集&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;shadow=1;" parent="1" vertex="1">
+        <mxCell id="rlrRLgWWHuGaL_X8YX_K-60" value="&lt;div&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;数据集&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;（无标签样本）&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="-40" y="1545" width="80" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rlrRLgWWHuGaL_X8YX_K-61" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;" parent="1" vertex="1">
@@ -48,7 +48,7 @@
         <mxCell id="rlrRLgWWHuGaL_X8YX_K-73" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="-50" y="1635" width="80" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rlrRLgWWHuGaL_X8YX_K-74" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;额外数据集&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;shadow=1;" parent="1" vertex="1">
+        <mxCell id="rlrRLgWWHuGaL_X8YX_K-74" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;额外数据集&lt;br&gt;(有标签样本)&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="-40" y="1645" width="80" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rlrRLgWWHuGaL_X8YX_K-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="rlrRLgWWHuGaL_X8YX_K-74" edge="1">
