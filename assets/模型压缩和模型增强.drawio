@@ -4,15 +4,6 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="rlrRLgWWHuGaL_X8YX_K-53" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99CCFF;strokeColor=#6c8ebf;shadow=1;" parent="1" vertex="1">
-          <mxGeometry x="30" y="1345" width="180" height="130" as="geometry" />
-        </mxCell>
-        <mxCell id="rlrRLgWWHuGaL_X8YX_K-54" value="&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;参数更大的教师模型&lt;/font&gt;&lt;/span&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;(例如: DeepSeek-R1-671B满血版）&lt;/b&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=1;" parent="1" vertex="1">
-          <mxGeometry x="45" y="1360" width="160" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="rlrRLgWWHuGaL_X8YX_K-55" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyBoZWlnaHQ9IjE0NS4yNjI2NTg1OTYwMzg4MiIgd2lkdGg9IjE5My4zNzE4OTE5NzU0MDI4MyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIyMC40ODIxMjA1MTM5MTYwMTYgMTQzLjM2NDYyNDAyMzQzNzUgOTkwLjA2NDA4NjkxNDA2MjUgNzQzLjc0NDgxMjAxMTcxODgiIGNsYXNzPSJpY29uIj48cGF0aCBmaWxsPSIjNEQ2QkZFIiBkPSJNMTAwMC4xNCAyMDUuNzg0Yy0xMC40ODQtNS4yNDQtMTUuMDEyIDQuNzUyLTIxLjEzNiA5LjgyOC0yLjA4OCAxLjY0LTMuODY4IDMuNzY4LTUuNjUyIDUuNzM2LTE1LjMyIDE2LjcxMi0zMy4yMTYgMjcuNjg4LTU2LjYyOCAyNi4zNzYtMzQuMi0xLjk2NC02My40MDQgOS4wMTItODkuMjA4IDM1LjcyLTUuNDg4LTMyLjkzMi0yMy43MTYtNTIuNTkyLTUxLjQ2OC02NS4yMDgtMTQuNTQtNi41NTYtMjkuMjA0LTEzLjEwOC0zOS4zODQtMjcuMzYtNy4wODQtMTAuMTYtOS4wMDgtMjEuNDY0LTEyLjU3Mi0zMi42MDgtMi4yNTYtNi43MTYtNC41MDgtMTMuNi0xMi4wODQtMTQuNzQ0LTguMjUyLTEuMzEyLTExLjQ2OCA1LjczNi0xNC43MDQgMTEuNjMyLTEyLjkwNCAyNC4wODQtMTcuOTIgNTAuNjI4LTE3LjQwOCA3Ny40OTYgMS4xMDQgNjAuNDYgMjYuMTMyIDEwOC42MjggNzUuODE2IDE0Mi44NzIgNS42NTIgMy45MzIgNy4xMDggNy44NjQgNS4zMjQgMTMuNi0zLjM4IDExLjc5Mi03LjQzMiAyMy4yNi0xMC45NzYgMzUuMDYtMi4yNTIgNy41MzYtNS42MzIgOS4xNzItMTMuNTYgNS44OTYtMjcuMjU2LTExLjYzMi01MC44MDgtMjguODM2LTcxLjYzNi00OS42NC0zNS4zMjgtMzQuOS02Ny4yOC03My40MDQtMTA3LjExMi0xMDMuNTUyYTQ3My4wMTIgNDczLjAxMiAwIDAgMC0yOC40MDQtMTkuODI0Yy00MC42NTYtNDAuMzA0IDUuMzI0LTczLjQgMTUuOTcyLTc3LjMzMiAxMS4xMi00LjA5NiAzLjg3Mi0xOC4xODQtMzIuMTEyLTE4LjAyLTM1Ljk4NCAwLjE2LTY4Ljg5NiAxMi40NTItMTEwLjgzNiAyOC44MzYtNi4xNDQgMi40NTYtMTIuNiA0LjI1Ni0xOS4xOTIgNS43MzItMzguMDkyLTcuMzcyLTc3LjYyLTkuMDEyLTExOC45MjgtNC4yNi03Ny43NiA4Ljg0OC0xMzkuODggNDYuMzY4LTE4NS41NDggMTEwLjQyOEMyMy44NiAzNzkuNDU2IDEwLjkzNiA0NjYuOTQ0IDI2Ljc2OCA1NTguMjA0YzE2LjU4OCA5Ni4xNzIgNjQuNjk2IDE3NS44IDEzOC41ODggMjM4LjA2IDc2LjYzNiA2NC41NTIgMTY0Ljg4NCA5Ni4xNzIgMjY1LjU2NCA5MC4xMTIgNjEuMTUyLTMuNjA0IDEyOS4yMjgtMTEuOTYgMjA2LjAyOC03OC4zMTYgMTkuMzc2IDkuODI4IDM5LjcxMiAxMy43NjQgNzMuNDIgMTYuNzEyIDI1Ljk5MiAyLjQ1NiA1MC45OTYtMS4zMTIgNzAuMzQ4LTUuNDA4IDMwLjMzMi02LjU1MiAyOC4yMjQtMzUuMjI0IDE3LjI2OC00MC40NjgtODguOTA0LTQyLjI3Mi02OS4zODgtMjUuMDY4LTg3LjEyNC0zOC45OTIgNDUuMTgtNTQuNTYgMTEzLjI1Ni0xMTEuMjQ4IDEzOS44OC0yOTQuOTEyIDIuMTA4LTE0LjU4NCAwLjMyOC0yMy43NiAwLTM1LjU1Ni0wLjE2NC03LjIwOCAxLjQzMi05Ljk5MiA5LjUyNC0xMC44MTIgMjIuMjYtMi42MjQgNDMuODg4LTguODQ4IDYzLjczMi0xOS45ODggNTcuNTg4LTMyLjExNiA4MC44MzYtODQuODcyIDg2LjMyNC0xNDguMTEyIDAuODItOS42NjgtMC4xNjQtMTkuNjY0LTEwLjE4LTI0Ljc0ek00OTguMTk2IDc3NC45NmMtODYuMTQtNjkuMTQtMTI3Ljk0LTkxLjkxNi0xNDUuMi05MC45MzItMTYuMTQgMC45ODQtMTMuMjMyIDE5LjgyNC05LjY4OCAzMi4xMTIgMy43MDQgMTIuMTI0IDguNTYgMjAuNDggMTUuMzM2IDMxLjEzMiA0LjY3MiA3LjA0NCA3LjkwOCAxNy41MjgtNC42ODggMjUuMzk2LTI3Ljc1MiAxNy41MjgtNzUuOTgtNS45LTc4LjIzNi03LjA0OC01Ni4xNTYtMzMuNzUyLTEwMy4xMTYtNzguMzE2LTEzNi4xODgtMTM5LjI2NC0zMS45NTItNTguNjUyLTUwLjQ4NC0xMjEuNTY4LTUzLjU2LTE4OC43NDQtMC44MTYtMTYuMjIgMy44NzItMjEuOTUyIDE5LjY2NC0yNC45MDRhMTg5LjE2IDE4OS4xNiAwIDAgMSA2My4xLTEuNjM2Yzg3Ljk0IDEzLjEwOCAxNjIuODE2IDUzLjI0OCAyMjUuNTY0IDExNi44MTYgMzUuODIgMzYuMjA4IDYyLjkxNiA3OS40NjQgOTAuODUyIDEyMS43MzYgMjkuNjc2IDQ0Ljg5MiA2MS42MjQgODcuNjUyIDEwMi4yNzYgMTIyLjcxNiAxNC4zNTYgMTIuMjg4IDI1LjgwNCAyMS42MjQgMzYuNzggMjguNTA4LTMzLjA3MiAzLjc2OC04OC4yNjggNC41ODgtMTI2LjAxMi0yNS44ODh6IG00MS4zMDgtMjcxLjE1NmMwLTcuMjA4IDUuNjUyLTEyLjk0NCAxMi43Ni0xMi45NDQgMS42MTIgMC4wMjggMy4wNTYgMC4zIDQuMzQgMC44MmExMi43ODggMTIuNzg4IDAgMCAxIDcuNjg4IDguMjhjMC4zOCAxLjI1MiAwLjU2IDIuNTMyIDAuNTQ4IDMuODQ0YTEyLjkyIDEyLjkyIDAgMCAxLTIuMDg4IDcuMTY4IDEyLjg2OCAxMi44NjggMCAwIDEtNS43MzYgNC43NzYgMTIuOCAxMi44IDAgMCAxLTQuOTE2IDEgMTIuNzM2IDEyLjczNiAwIDAgMS00Ljg5Ni0xIDEyLjc2IDEyLjc2IDAgMCAxLTUuNjg4LTQuNzg4IDEyLjY3MiAxMi42NzIgMCAwIDEtMi4wMTItNy4xNTZ6IG0xMjguMjY4IDY3LjE3NmMtOC4yMTIgMy40NC0xNi40NDggNi4zODgtMjQuMzcyIDYuNzE2LTEyLjI0OCAwLjY1Ni0yNS42NC00LjQyNC0zMi44OTItMTAuNjQ4LTExLjMwNC05LjY2OC0xOS4zNzItMTUuMDc2LTIyLjc1Mi0zMS45NDgtMS40NTYtNy4yMTItMC42NTYtMTguMzUyIDAuNjM2LTI0Ljc0IDIuOTA4LTEzLjc2NC0wLjMyOC0yMi42MTItOS44MzItMzAuNjQtNy43NC02LjU1Mi0xNy41OTItOC4zNTYtMjguNDA0LTguMzU2LTQuMDM2IDAtNy43NDQtMS44LTEwLjQ4OC0zLjI3NmExMC41OCAxMC41OCAwIDAgMS0zLjQ5Mi0yLjY3MiAxMC41MjQgMTAuNTI0IDAgMCAxLTIuMTM2LTMuODQ0IDEwLjU2OCAxMC41NjggMCAwIDEtMC40MTItNC4zOCAxMC41MTIgMTAuNTEyIDAgMCAxIDEuMzcyLTQuMTc2YzEuMTI0LTIuMjk2IDYuNjEyLTcuODY4IDcuOTA0LTguODQ4IDE0LjY4NC04LjUyIDMxLjYyLTUuNzM2IDQ3LjI2OCAwLjY1NiAxNC41MiA2LjA2IDI1LjQ3NiAxNy4yIDQxLjMwOCAzMi45MzIgMTYuMTQgMTkuMDA0IDE5LjA0OCAyNC4yNDggMjguMjIgMzguNSA3LjI3MiAxMS4xNCAxMy44ODggMjIuNjEyIDE4LjM5MiAzNS43MTYgMi43NjQgOC4xOTItMC44IDE0LjkxMi0xMC4zMiAxOS4wMDh6Ii8+PC9zdmc+;shadow=1;" parent="1" vertex="1">
-          <mxGeometry x="90" y="1415" width="49.24" height="36.99" as="geometry" />
-        </mxCell>
         <mxCell id="rlrRLgWWHuGaL_X8YX_K-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="rlrRLgWWHuGaL_X8YX_K-57" target="rlrRLgWWHuGaL_X8YX_K-53" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -24,32 +15,32 @@
         </mxCell>
         <mxCell id="rlrRLgWWHuGaL_X8YX_K-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="rlrRLgWWHuGaL_X8YX_K-60" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="180" y="1575.2857142857142" as="targetPoint" />
+            <mxPoint x="300" y="1575" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="rlrRLgWWHuGaL_X8YX_K-60" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;数据集&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="-40" y="1545" width="80" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rlrRLgWWHuGaL_X8YX_K-61" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;" parent="1" vertex="1">
-          <mxGeometry x="190" y="1555" width="130" height="60" as="geometry" />
+          <mxGeometry x="310" y="1540" width="130" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rlrRLgWWHuGaL_X8YX_K-63" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;和教师模型同等参数大小的学生模型&lt;/b&gt;&lt;/font&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="200" y="1565" width="110" height="60" as="geometry" />
+          <mxGeometry x="320" y="1550" width="110" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rlrRLgWWHuGaL_X8YX_K-64" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;模型增强&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="9.62" y="1280" width="210" height="60" as="geometry" />
+          <mxGeometry x="120" y="1280" width="210" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rlrRLgWWHuGaL_X8YX_K-65" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="119.75999999999999" y="1486" as="sourcePoint" />
-            <mxPoint x="120" y="1576" as="targetPoint" />
+            <mxPoint x="209.5" y="1479" as="sourcePoint" />
+            <mxPoint x="209.74" y="1569" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="rlrRLgWWHuGaL_X8YX_K-66" value="&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;指导训练过程&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="139.24" y="1490" width="120.76" height="30" as="geometry" />
+          <mxGeometry x="220" y="1505" width="120.76" height="30" as="geometry" />
         </mxCell>
         <mxCell id="rlrRLgWWHuGaL_X8YX_K-67" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;训练(SFT)&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="67.12" y="1595" width="95" height="30" as="geometry" />
+          <mxGeometry x="162.5" y="1595" width="95" height="30" as="geometry" />
         </mxCell>
         <mxCell id="rlrRLgWWHuGaL_X8YX_K-72" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="-60" y="1625" width="80" height="60" as="geometry" />
@@ -62,12 +53,24 @@
         </mxCell>
         <mxCell id="rlrRLgWWHuGaL_X8YX_K-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="rlrRLgWWHuGaL_X8YX_K-74" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="180" y="1590" as="targetPoint" />
+            <mxPoint x="300" y="1590" as="targetPoint" />
             <Array as="points">
               <mxPoint x="60" y="1675" />
               <mxPoint x="60" y="1590" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="Gf8yQiint4pxD9aLNCLR-1" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="120" y="1345" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="rlrRLgWWHuGaL_X8YX_K-53" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99CCFF;strokeColor=#6c8ebf;shadow=1;" parent="Gf8yQiint4pxD9aLNCLR-1" vertex="1">
+          <mxGeometry width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="rlrRLgWWHuGaL_X8YX_K-54" value="&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;参数更大的教师模型&lt;/font&gt;&lt;/span&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;(例如: DeepSeek-R1-671B满血版）&lt;/b&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=1;" parent="Gf8yQiint4pxD9aLNCLR-1" vertex="1">
+          <mxGeometry x="15" y="15" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rlrRLgWWHuGaL_X8YX_K-55" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyBoZWlnaHQ9IjE0NS4yNjI2NTg1OTYwMzg4MiIgd2lkdGg9IjE5My4zNzE4OTE5NzU0MDI4MyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIyMC40ODIxMjA1MTM5MTYwMTYgMTQzLjM2NDYyNDAyMzQzNzUgOTkwLjA2NDA4NjkxNDA2MjUgNzQzLjc0NDgxMjAxMTcxODgiIGNsYXNzPSJpY29uIj48cGF0aCBmaWxsPSIjNEQ2QkZFIiBkPSJNMTAwMC4xNCAyMDUuNzg0Yy0xMC40ODQtNS4yNDQtMTUuMDEyIDQuNzUyLTIxLjEzNiA5LjgyOC0yLjA4OCAxLjY0LTMuODY4IDMuNzY4LTUuNjUyIDUuNzM2LTE1LjMyIDE2LjcxMi0zMy4yMTYgMjcuNjg4LTU2LjYyOCAyNi4zNzYtMzQuMi0xLjk2NC02My40MDQgOS4wMTItODkuMjA4IDM1LjcyLTUuNDg4LTMyLjkzMi0yMy43MTYtNTIuNTkyLTUxLjQ2OC02NS4yMDgtMTQuNTQtNi41NTYtMjkuMjA0LTEzLjEwOC0zOS4zODQtMjcuMzYtNy4wODQtMTAuMTYtOS4wMDgtMjEuNDY0LTEyLjU3Mi0zMi42MDgtMi4yNTYtNi43MTYtNC41MDgtMTMuNi0xMi4wODQtMTQuNzQ0LTguMjUyLTEuMzEyLTExLjQ2OCA1LjczNi0xNC43MDQgMTEuNjMyLTEyLjkwNCAyNC4wODQtMTcuOTIgNTAuNjI4LTE3LjQwOCA3Ny40OTYgMS4xMDQgNjAuNDYgMjYuMTMyIDEwOC42MjggNzUuODE2IDE0Mi44NzIgNS42NTIgMy45MzIgNy4xMDggNy44NjQgNS4zMjQgMTMuNi0zLjM4IDExLjc5Mi03LjQzMiAyMy4yNi0xMC45NzYgMzUuMDYtMi4yNTIgNy41MzYtNS42MzIgOS4xNzItMTMuNTYgNS44OTYtMjcuMjU2LTExLjYzMi01MC44MDgtMjguODM2LTcxLjYzNi00OS42NC0zNS4zMjgtMzQuOS02Ny4yOC03My40MDQtMTA3LjExMi0xMDMuNTUyYTQ3My4wMTIgNDczLjAxMiAwIDAgMC0yOC40MDQtMTkuODI0Yy00MC42NTYtNDAuMzA0IDUuMzI0LTczLjQgMTUuOTcyLTc3LjMzMiAxMS4xMi00LjA5NiAzLjg3Mi0xOC4xODQtMzIuMTEyLTE4LjAyLTM1Ljk4NCAwLjE2LTY4Ljg5NiAxMi40NTItMTEwLjgzNiAyOC44MzYtNi4xNDQgMi40NTYtMTIuNiA0LjI1Ni0xOS4xOTIgNS43MzItMzguMDkyLTcuMzcyLTc3LjYyLTkuMDEyLTExOC45MjgtNC4yNi03Ny43NiA4Ljg0OC0xMzkuODggNDYuMzY4LTE4NS41NDggMTEwLjQyOEMyMy44NiAzNzkuNDU2IDEwLjkzNiA0NjYuOTQ0IDI2Ljc2OCA1NTguMjA0YzE2LjU4OCA5Ni4xNzIgNjQuNjk2IDE3NS44IDEzOC41ODggMjM4LjA2IDc2LjYzNiA2NC41NTIgMTY0Ljg4NCA5Ni4xNzIgMjY1LjU2NCA5MC4xMTIgNjEuMTUyLTMuNjA0IDEyOS4yMjgtMTEuOTYgMjA2LjAyOC03OC4zMTYgMTkuMzc2IDkuODI4IDM5LjcxMiAxMy43NjQgNzMuNDIgMTYuNzEyIDI1Ljk5MiAyLjQ1NiA1MC45OTYtMS4zMTIgNzAuMzQ4LTUuNDA4IDMwLjMzMi02LjU1MiAyOC4yMjQtMzUuMjI0IDE3LjI2OC00MC40NjgtODguOTA0LTQyLjI3Mi02OS4zODgtMjUuMDY4LTg3LjEyNC0zOC45OTIgNDUuMTgtNTQuNTYgMTEzLjI1Ni0xMTEuMjQ4IDEzOS44OC0yOTQuOTEyIDIuMTA4LTE0LjU4NCAwLjMyOC0yMy43NiAwLTM1LjU1Ni0wLjE2NC03LjIwOCAxLjQzMi05Ljk5MiA5LjUyNC0xMC44MTIgMjIuMjYtMi42MjQgNDMuODg4LTguODQ4IDYzLjczMi0xOS45ODggNTcuNTg4LTMyLjExNiA4MC44MzYtODQuODcyIDg2LjMyNC0xNDguMTEyIDAuODItOS42NjgtMC4xNjQtMTkuNjY0LTEwLjE4LTI0Ljc0ek00OTguMTk2IDc3NC45NmMtODYuMTQtNjkuMTQtMTI3Ljk0LTkxLjkxNi0xNDUuMi05MC45MzItMTYuMTQgMC45ODQtMTMuMjMyIDE5LjgyNC05LjY4OCAzMi4xMTIgMy43MDQgMTIuMTI0IDguNTYgMjAuNDggMTUuMzM2IDMxLjEzMiA0LjY3MiA3LjA0NCA3LjkwOCAxNy41MjgtNC42ODggMjUuMzk2LTI3Ljc1MiAxNy41MjgtNzUuOTgtNS45LTc4LjIzNi03LjA0OC01Ni4xNTYtMzMuNzUyLTEwMy4xMTYtNzguMzE2LTEzNi4xODgtMTM5LjI2NC0zMS45NTItNTguNjUyLTUwLjQ4NC0xMjEuNTY4LTUzLjU2LTE4OC43NDQtMC44MTYtMTYuMjIgMy44NzItMjEuOTUyIDE5LjY2NC0yNC45MDRhMTg5LjE2IDE4OS4xNiAwIDAgMSA2My4xLTEuNjM2Yzg3Ljk0IDEzLjEwOCAxNjIuODE2IDUzLjI0OCAyMjUuNTY0IDExNi44MTYgMzUuODIgMzYuMjA4IDYyLjkxNiA3OS40NjQgOTAuODUyIDEyMS43MzYgMjkuNjc2IDQ0Ljg5MiA2MS42MjQgODcuNjUyIDEwMi4yNzYgMTIyLjcxNiAxNC4zNTYgMTIuMjg4IDI1LjgwNCAyMS42MjQgMzYuNzggMjguNTA4LTMzLjA3MiAzLjc2OC04OC4yNjggNC41ODgtMTI2LjAxMi0yNS44ODh6IG00MS4zMDgtMjcxLjE1NmMwLTcuMjA4IDUuNjUyLTEyLjk0NCAxMi43Ni0xMi45NDQgMS42MTIgMC4wMjggMy4wNTYgMC4zIDQuMzQgMC44MmExMi43ODggMTIuNzg4IDAgMCAxIDcuNjg4IDguMjhjMC4zOCAxLjI1MiAwLjU2IDIuNTMyIDAuNTQ4IDMuODQ0YTEyLjkyIDEyLjkyIDAgMCAxLTIuMDg4IDcuMTY4IDEyLjg2OCAxMi44NjggMCAwIDEtNS43MzYgNC43NzYgMTIuOCAxMi44IDAgMCAxLTQuOTE2IDEgMTIuNzM2IDEyLjczNiAwIDAgMS00Ljg5Ni0xIDEyLjc2IDEyLjc2IDAgMCAxLTUuNjg4LTQuNzg4IDEyLjY3MiAxMi42NzIgMCAwIDEtMi4wMTItNy4xNTZ6IG0xMjguMjY4IDY3LjE3NmMtOC4yMTIgMy40NC0xNi40NDggNi4zODgtMjQuMzcyIDYuNzE2LTEyLjI0OCAwLjY1Ni0yNS42NC00LjQyNC0zMi44OTItMTAuNjQ4LTExLjMwNC05LjY2OC0xOS4zNzItMTUuMDc2LTIyLjc1Mi0zMS45NDgtMS40NTYtNy4yMTItMC42NTYtMTguMzUyIDAuNjM2LTI0Ljc0IDIuOTA4LTEzLjc2NC0wLjMyOC0yMi42MTItOS44MzItMzAuNjQtNy43NC02LjU1Mi0xNy41OTItOC4zNTYtMjguNDA0LTguMzU2LTQuMDM2IDAtNy43NDQtMS44LTEwLjQ4OC0zLjI3NmExMC41OCAxMC41OCAwIDAgMS0zLjQ5Mi0yLjY3MiAxMC41MjQgMTAuNTI0IDAgMCAxLTIuMTM2LTMuODQ0IDEwLjU2OCAxMC41NjggMCAwIDEtMC40MTItNC4zOCAxMC41MTIgMTAuNTEyIDAgMCAxIDEuMzcyLTQuMTc2YzEuMTI0LTIuMjk2IDYuNjEyLTcuODY4IDcuOTA0LTguODQ4IDE0LjY4NC04LjUyIDMxLjYyLTUuNzM2IDQ3LjI2OCAwLjY1NiAxNC41MiA2LjA2IDI1LjQ3NiAxNy4yIDQxLjMwOCAzMi45MzIgMTYuMTQgMTkuMDA0IDE5LjA0OCAyNC4yNDggMjguMjIgMzguNSA3LjI3MiAxMS4xNCAxMy44ODggMjIuNjEyIDE4LjM5MiAzNS43MTYgMi43NjQgOC4xOTItMC44IDE0LjkxMi0xMC4zMiAxOS4wMDh6Ii8+PC9zdmc+;shadow=1;" parent="Gf8yQiint4pxD9aLNCLR-1" vertex="1">
+          <mxGeometry x="60" y="70" width="49.24" height="36.99" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
