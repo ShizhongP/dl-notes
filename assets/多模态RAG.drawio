@@ -13,7 +13,7 @@
         <mxCell id="mhN7xVSAiQ1cdXxRnYHf-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="mhN7xVSAiQ1cdXxRnYHf-4" target="mhN7xVSAiQ1cdXxRnYHf-27">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mhN7xVSAiQ1cdXxRnYHf-4" value="&lt;b&gt;LLM&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+        <mxCell id="mhN7xVSAiQ1cdXxRnYHf-4" value="&lt;b&gt;生成模型&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
           <mxGeometry x="390" y="356.5" width="60" height="61" as="geometry" />
         </mxCell>
         <mxCell id="mhN7xVSAiQ1cdXxRnYHf-5" value="" style="group" vertex="1" connectable="0" parent="1">
@@ -40,10 +40,10 @@
         <mxCell id="mhN7xVSAiQ1cdXxRnYHf-11" value="&lt;b&gt;&lt;i&gt;编码成向量嵌入&lt;/i&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="384" y="140" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="mhN7xVSAiQ1cdXxRnYHf-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;curved=1;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="mhN7xVSAiQ1cdXxRnYHf-13" target="mhN7xVSAiQ1cdXxRnYHf-16">
+        <mxCell id="mhN7xVSAiQ1cdXxRnYHf-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;curved=1;fillColor=#ffe6cc;strokeColor=#d79b00;" edge="1" parent="1" source="mhN7xVSAiQ1cdXxRnYHf-13" target="mhN7xVSAiQ1cdXxRnYHf-16">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mhN7xVSAiQ1cdXxRnYHf-13" value="&lt;b&gt;Input&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="mhN7xVSAiQ1cdXxRnYHf-13" value="&lt;b&gt;查询&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="180" y="367" width="50" height="30" as="geometry" />
         </mxCell>
         <mxCell id="mhN7xVSAiQ1cdXxRnYHf-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;curved=1;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="mhN7xVSAiQ1cdXxRnYHf-16" target="mhN7xVSAiQ1cdXxRnYHf-18">
@@ -54,7 +54,7 @@
             <mxPoint x="320" y="350" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="mhN7xVSAiQ1cdXxRnYHf-16" value="&lt;b&gt;Retriever&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+        <mxCell id="mhN7xVSAiQ1cdXxRnYHf-16" value="&lt;b&gt;检索器&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="240" y="250" width="90" height="40" as="geometry" />
         </mxCell>
         <mxCell id="mhN7xVSAiQ1cdXxRnYHf-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;curved=1;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="mhN7xVSAiQ1cdXxRnYHf-18" target="mhN7xVSAiQ1cdXxRnYHf-16">
@@ -99,16 +99,16 @@
         <mxCell id="mhN7xVSAiQ1cdXxRnYHf-27" value="&lt;b&gt;Response&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="520" y="377" width="70" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="mhN7xVSAiQ1cdXxRnYHf-28" value="&lt;font color=&quot;#97d077&quot;&gt;&lt;b&gt;&lt;i&gt;检索&lt;/i&gt;&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="354" y="200" width="60" height="30" as="geometry" />
+        <mxCell id="mhN7xVSAiQ1cdXxRnYHf-28" value="&lt;font color=&quot;#97d077&quot;&gt;&lt;b&gt;&lt;i&gt;获取向量嵌入&lt;/i&gt;&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="354" y="200" width="116" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="mhN7xVSAiQ1cdXxRnYHf-29" value="&lt;b&gt;&lt;i&gt;&lt;font color=&quot;#97d077&quot;&gt;Request&lt;/font&gt;&lt;/i&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="mhN7xVSAiQ1cdXxRnYHf-29" value="&lt;font&gt;&lt;b&gt;&lt;i&gt;编码&lt;/i&gt;&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="160" y="310" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="mhN7xVSAiQ1cdXxRnYHf-30" value="&lt;b&gt;&lt;i&gt;Generate&lt;/i&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="mhN7xVSAiQ1cdXxRnYHf-30" value="&lt;b&gt;&lt;i&gt;生成&lt;/i&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="454" y="356.5" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="mhN7xVSAiQ1cdXxRnYHf-31" value="&lt;font color=&quot;#ffd966&quot;&gt;&lt;b&gt;Return related Text&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="mhN7xVSAiQ1cdXxRnYHf-31" value="&lt;font style=&quot;color: rgb(255, 209, 61);&quot;&gt;&lt;b&gt;相关多模态知识源&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="310" y="320" width="140" height="30" as="geometry" />
         </mxCell>
         <mxCell id="mhN7xVSAiQ1cdXxRnYHf-32" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;&lt;i&gt;编码嵌入&lt;/i&gt;&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
