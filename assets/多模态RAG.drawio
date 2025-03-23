@@ -5,7 +5,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="mhN7xVSAiQ1cdXxRnYHf-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="140" y="110" width="460" height="320" as="geometry" />
+          <mxGeometry x="140" y="100" width="470" height="340" as="geometry" />
         </mxCell>
         <mxCell id="mhN7xVSAiQ1cdXxRnYHf-2" value="" style="sketch=0;shadow=0;dashed=0;html=1;strokeColor=#82b366;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.databases.database;fillColor=#d5e8d4;" vertex="1" parent="1">
           <mxGeometry x="450" y="151" width="70" height="49" as="geometry" />
@@ -30,15 +30,15 @@
         </mxCell>
         <mxCell id="mhN7xVSAiQ1cdXxRnYHf-9" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="264" y="180" as="sourcePoint" />
-            <mxPoint x="430" y="180" as="targetPoint" />
+            <mxPoint x="264" y="175" as="sourcePoint" />
+            <mxPoint x="330" y="175" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="mhN7xVSAiQ1cdXxRnYHf-10" value="&lt;b&gt;&lt;i&gt;数据预处理&lt;/i&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="280" y="140" width="60" height="30" as="geometry" />
+          <mxGeometry x="270" y="145.5" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="mhN7xVSAiQ1cdXxRnYHf-11" value="&lt;b&gt;&lt;i&gt;编码成向量嵌入&lt;/i&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="360" y="140" width="60" height="30" as="geometry" />
+          <mxGeometry x="384" y="140" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="mhN7xVSAiQ1cdXxRnYHf-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;curved=1;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="mhN7xVSAiQ1cdXxRnYHf-13" target="mhN7xVSAiQ1cdXxRnYHf-16">
           <mxGeometry relative="1" as="geometry" />
@@ -99,7 +99,7 @@
         <mxCell id="mhN7xVSAiQ1cdXxRnYHf-27" value="&lt;b&gt;Response&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="520" y="377" width="70" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="mhN7xVSAiQ1cdXxRnYHf-28" value="&lt;b&gt;&lt;i&gt;&lt;font color=&quot;#97d077&quot;&gt;Fetch&lt;/font&gt;&lt;/i&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="mhN7xVSAiQ1cdXxRnYHf-28" value="&lt;font color=&quot;#97d077&quot;&gt;&lt;b&gt;&lt;i&gt;检索&lt;/i&gt;&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="354" y="200" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="mhN7xVSAiQ1cdXxRnYHf-29" value="&lt;b&gt;&lt;i&gt;&lt;font color=&quot;#97d077&quot;&gt;Request&lt;/font&gt;&lt;/i&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
@@ -111,14 +111,20 @@
         <mxCell id="mhN7xVSAiQ1cdXxRnYHf-31" value="&lt;font color=&quot;#ffd966&quot;&gt;&lt;b&gt;Return related Text&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="310" y="320" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="mhN7xVSAiQ1cdXxRnYHf-32" value="&lt;b&gt;&lt;i&gt;编码嵌入&lt;/i&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="mhN7xVSAiQ1cdXxRnYHf-32" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;&lt;i&gt;编码嵌入&lt;/i&gt;&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="540" y="110" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="mhN7xVSAiQ1cdXxRnYHf-33" value="&lt;b&gt;&lt;i&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Retrieval&lt;/font&gt;&lt;/i&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="mhN7xVSAiQ1cdXxRnYHf-33" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;&lt;i&gt;检索过程&lt;/i&gt;&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="530" y="230" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="mhN7xVSAiQ1cdXxRnYHf-34" value="&lt;b&gt;&lt;i&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Generation&lt;/font&gt;&lt;/i&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="mhN7xVSAiQ1cdXxRnYHf-34" value="&lt;b&gt;&lt;i&gt;生成&lt;/i&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="520" y="310" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mhN7xVSAiQ1cdXxRnYHf-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="mhN7xVSAiQ1cdXxRnYHf-35" target="mhN7xVSAiQ1cdXxRnYHf-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mhN7xVSAiQ1cdXxRnYHf-35" value="&lt;b&gt;多模态编码器&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="330" y="145.5" width="50" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
